@@ -120,20 +120,20 @@
         <InArgument x:TypeArguments="x:Object">[g_Config("LocalDataPath").ToString +"\InProgress\" + g_TransactionItem("Contents").ToString]</InArgument>
       </Assign.Value>
     </Assign>
-    <upap:GetPDFPageCount DisplayName="Get PDF Page Count" FileName="[g_Config(&quot;MainCurrentFilePath&quot;).ToString]" sap:VirtualizedContainerService.HintSize="450,115.2" sap2010:WorkflowViewState.IdRef="GetPDFPageCount_2" PageCount="[intPageCount]" />
-    <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each currentNumber" sap:VirtualizedContainerService.HintSize="450,358.8" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Enumerable.Range(1, intPageCount).ToArray()]">
+    <upap:GetPDFPageCount DisplayName="Get PDF Page Count" FileName="[g_Config(&quot;MainCurrentFilePath&quot;).ToString]" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="GetPDFPageCount_2" PageCount="[intPageCount]" />
+    <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each currentNumber" sap:VirtualizedContainerService.HintSize="450,309.6" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Enumerable.Range(1, intPageCount).ToArray()]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:Int32">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Int32" Name="currentNumber" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,220.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,171.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <upap:ExtractPDFPageRange DisplayName="Extract PDF Page Range" FileName="[g_Config(&quot;MainCurrentFilePath&quot;).ToString]" sap:VirtualizedContainerService.HintSize="382,160.4" sap2010:WorkflowViewState.IdRef="ExtractPDFPageRange_2" OutputFileName="[g_Config(&quot;SplitFileFolder&quot;).ToString + &quot;\&quot; + intPageCount.tostring + g_TransactionItem(&quot;Contents&quot;).ToString]" Range="[intPageCount.ToString]" />
+            <upap:ExtractPDFPageRange DisplayName="Extract PDF Page Range" FileName="[g_Config(&quot;MainCurrentFilePath&quot;).ToString]" sap:VirtualizedContainerService.HintSize="382,111.2" sap2010:WorkflowViewState.IdRef="ExtractPDFPageRange_2" OutputFileName="[g_Config(&quot;SplitFileFolder&quot;).ToString + &quot;\&quot; + currentNumber.tostring + g_TransactionItem(&quot;Contents&quot;).ToString]" Range="[intPageCount.ToString]" />
           </Sequence>
         </ActivityAction>
       </ui:ForEach.Body>

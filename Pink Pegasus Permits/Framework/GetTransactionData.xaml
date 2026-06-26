@@ -251,7 +251,7 @@
               </Sequence>
             </If.Else>
           </If>
-          <ds:Download_File DisplayName="Download File - get first PDF" sap:VirtualizedContainerService.HintSize="468,332.8" sap2010:WorkflowViewState.IdRef="Download_File_1" in_SPOLFilePath="[g_Config(&quot;strFolderPath&quot;).ToString +&quot;\&quot;+dtContents(0)(&quot;Contents&quot;).tostring]" in_strBearerToken="[g_BearerToken]" in_strListID="[g_Config(&quot;strListID&quot;).ToString]" in_strSaveToFilePath="[g_Config(&quot;LocalDataPath&quot;).ToString +&quot;\InProgress&quot;]" in_strSiteID="[g_Config(&quot;strSiteID&quot;).ToString]" />
+          <ds:Download_File DisplayName="Download File - get first PDF" sap:VirtualizedContainerService.HintSize="468,332.8" sap2010:WorkflowViewState.IdRef="Download_File_1" in_SPOLFilePath="[g_Config(&quot;strFolderPath&quot;).ToString +&quot;/&quot;+dtContents(0)(&quot;Contents&quot;).tostring]" in_strBearerToken="[g_BearerToken]" in_strListID="[g_Config(&quot;strListID&quot;).ToString]" in_strSaveToFilePath="[g_Config(&quot;LocalDataPath&quot;).ToString +&quot;\InProgress\&quot; + dtContents(0)(&quot;Contents&quot;).tostring]" in_strSiteID="[g_Config(&quot;strSiteID&quot;).ToString]" />
           <Assign DisplayName="Assign current mail message in progress" sap:VirtualizedContainerService.HintSize="468,105.6" sap2010:WorkflowViewState.IdRef="Assign_9">
             <Assign.To>
               <OutArgument x:TypeArguments="sd:DataRow">[g_TransactionItem]</OutArgument>
