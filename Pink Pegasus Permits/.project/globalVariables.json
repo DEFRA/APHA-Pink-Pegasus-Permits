@@ -46,5 +46,13 @@
     "UnresolvedTypeFullyQualifiedName": null,
     "Expression": null,
     "IsLiteral": false
+  },
+  {
+    "Constant": false,
+    "Name": "g_elePegasus",
+    "TypeFullyQualifiedName": "UiPath.Core.UiElement, UiPath.UiAutomation.Activities, Version=24.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": null,
+    "IsLiteral": false
   }
 ]

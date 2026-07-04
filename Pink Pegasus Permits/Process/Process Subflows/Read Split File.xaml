@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Read_Split_File" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Read_Split_File_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Read_Split_File" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Read_Split_File_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upap="clr-namespace:UiPath.PDF.Activities.PDF;assembly=UiPath.PDF.Activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -39,6 +39,7 @@
       <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
       <x:String>UiPath.Platform.ResourceHandling</x:String>
       <x:String>UiPath.Vision.Core.OCR</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -108,11 +109,13 @@
       <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Read_Split_File" sap:VirtualizedContainerService.HintSize="884.8,859.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Read_Split_File" sap:VirtualizedContainerService.HintSize="884.8,1602" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strText" />
+      <Variable x:TypeArguments="x:String" Name="strReference" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -127,21 +130,29 @@
         <InArgument x:TypeArguments="x:Object">[Directory.GetFiles(g_Config("SplitFileFolder").ToString)(0)]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="[g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[strText]" />
-    <If Condition="[string.IsNullOrWhiteSpace(strText)]" DisplayName="If - ocr Document?" sap:VirtualizedContainerService.HintSize="450,471.2" sap2010:WorkflowViewState.IdRef="If_1">
+    <ui:ReadPDFText PreserveFormatting="{x:Null}" ResourceFile="{x:Null}" DisplayName="Read PDF Text" FileName="[g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" sap:VirtualizedContainerService.HintSize="450,124" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[strText]">
+      <ui:ReadPDFText.Item>
+        <upap:ItemArgument x:TypeArguments="upr:IResource" ResourceFile="{x:Null}" FileName="[g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" />
+      </ui:ReadPDFText.Item>
+    </ui:ReadPDFText>
+    <If Condition="[string.IsNullOrWhiteSpace(strText)]" DisplayName="If - ocr Document?" sap:VirtualizedContainerService.HintSize="450,507.6" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,209.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:ReadPDFWithOCR DegreeOfParallelism="-1" DisplayName="Read PDF With OCR" FileName="[g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" sap:VirtualizedContainerService.HintSize="382,149.6" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_1" ImageDpi="150" Range="All" Text="[strText]">
+          <ui:ReadPDFWithOCR ResourceFile="{x:Null}" DegreeOfParallelism="-1" DisplayName="Read PDF With OCR" FileName="[g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" sap:VirtualizedContainerService.HintSize="382,186" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_1" ImageDpi="150" Range="All" Text="[strText]">
+            <ui:ReadPDFWithOCR.Item>
+              <upap:ItemArgument x:TypeArguments="upr:IResource" ResourceFile="{x:Null}" FileName="[g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" />
+            </ui:ReadPDFWithOCR.Item>
             <ui:ReadPDFWithOCR.OCREngine>
               <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                 <ActivityFunc.Argument>
                   <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                 </ActivityFunc.Argument>
+                <p:UiPathDocumentOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="Removed_Key" ComputeSkewAngle="False" DisplayName="UiPath Document OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathDocumentOCR_4" Image="[Image]" Language="auto" NoopExecution="False" Profile="None" Scale="1" Timeout="100000" />
               </ActivityFunc>
             </ui:ReadPDFWithOCR.OCREngine>
           </ui:ReadPDFWithOCR>
@@ -157,6 +168,36 @@
         </Sequence>
       </If.Else>
     </If>
-    <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="C:\Temp\test.txt" sap:VirtualizedContainerService.HintSize="450,158.8" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[strText]" />
+    <Assign sap:VirtualizedContainerService.HintSize="450,114.4" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Object">[g_Config("Reference")]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Object">[Regex.Match(strText,"\b2\dGB(IMP|EXP|A10|REX|POC|MIC)[A-Z0-9]{6}\b").Value]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <If Condition="[string.IsNullOrWhiteSpace(g_Config(&quot;Reference&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="450,718.4" sap2010:WorkflowViewState.IdRef="If_2">
+      <If.Then>
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,337.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="C:\Temp\collectione.txt" sap:VirtualizedContainerService.HintSize="382,167.6" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="[&quot;not found - &quot; + g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" UseDefaultEncoding="False" />
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="382,109.6" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;stop - investigate&quot;]" />
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,218.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="C:\Temp\collectione.txt" sap:VirtualizedContainerService.HintSize="382,158.8" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[Regex.Match(strText,&quot;\b2\dGB(IMP|EXP|A10||REX|POC|MIC)[A-Z0-9]{6}\b&quot;).Value]" UseDefaultEncoding="False" />
+        </Sequence>
+      </If.Else>
+    </If>
   </Sequence>
 </Activity>

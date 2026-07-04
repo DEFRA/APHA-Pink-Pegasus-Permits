@@ -187,7 +187,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:Comment sap:VirtualizedContainerService.HintSize="536,206" sap2010:WorkflowViewState.IdRef="Comment_1" Text="1 - get folder contents&#xA;&#xA;2 - check how many pdf's in folder&#xA;0 - end no transaction&#xA;1+ get top pdf - download pdf to robot in progress folder&#xA;&#xA;pass filepath into transaction variable" />
-    <ds:Get_Folder_Contents DisplayName="Get Folder Contents" sap:VirtualizedContainerService.HintSize="536,332.8" sap2010:WorkflowViewState.IdRef="Get_Folder_Contents_1" in_strBearerToken="[g_BearerToken]" in_strFolderPath="[g_Config(&quot;strFolderPath&quot;).ToString]" in_strListID="[g_Config(&quot;strListID&quot;).ToString]" in_strSiteID="[g_Config(&quot;strSiteID&quot;).ToString]" out_dtContents="[dtContents]" />
+    <ds:Get_Folder_Contents DisplayName="Get Folder Contents" sap:VirtualizedContainerService.HintSize="536,332.8" sap2010:WorkflowViewState.IdRef="Get_Folder_Contents_1" in_strBearerToken="[g_BearerToken]" in_strFolderPath="[g_Config(&quot;strFolderPath&quot;).ToString+&quot;/Process&quot;]" in_strListID="[g_Config(&quot;strListID&quot;).ToString]" in_strSiteID="[g_Config(&quot;strSiteID&quot;).ToString]" out_dtContents="[dtContents]" />
     <If Condition="[dtContents.RowCount&gt;0]" DisplayName="Retrieved Emails?" sap:VirtualizedContainerService.HintSize="536,2067.2" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="502,1739.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
@@ -251,7 +251,7 @@
               </Sequence>
             </If.Else>
           </If>
-          <ds:Download_File DisplayName="Download File - get first PDF" sap:VirtualizedContainerService.HintSize="468,332.8" sap2010:WorkflowViewState.IdRef="Download_File_1" in_SPOLFilePath="[g_Config(&quot;strFolderPath&quot;).ToString +&quot;/&quot;+dtContents(0)(&quot;Contents&quot;).tostring]" in_strBearerToken="[g_BearerToken]" in_strListID="[g_Config(&quot;strListID&quot;).ToString]" in_strSaveToFilePath="[g_Config(&quot;LocalDataPath&quot;).ToString +&quot;\InProgress\&quot; + dtContents(0)(&quot;Contents&quot;).tostring]" in_strSiteID="[g_Config(&quot;strSiteID&quot;).ToString]" />
+          <ds:Download_File DisplayName="Download File - get first PDF" sap:VirtualizedContainerService.HintSize="468,332.8" sap2010:WorkflowViewState.IdRef="Download_File_1" in_SPOLFilePath="[g_Config(&quot;strFolderPath&quot;).ToString +&quot;/Process/&quot;+dtContents(0)(&quot;Contents&quot;).tostring]" in_strBearerToken="[g_BearerToken]" in_strListID="[g_Config(&quot;strListID&quot;).ToString]" in_strSaveToFilePath="[g_Config(&quot;LocalDataPath&quot;).ToString +&quot;\InProgress\&quot; + dtContents(0)(&quot;Contents&quot;).tostring]" in_strSiteID="[g_Config(&quot;strSiteID&quot;).ToString]" />
           <Assign DisplayName="Assign current mail message in progress" sap:VirtualizedContainerService.HintSize="468,105.6" sap2010:WorkflowViewState.IdRef="Assign_9">
             <Assign.To>
               <OutArgument x:TypeArguments="sd:DataRow">[g_TransactionItem]</OutArgument>

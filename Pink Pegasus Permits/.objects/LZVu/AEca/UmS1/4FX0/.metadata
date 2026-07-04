@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Focused viewFocused vie…",
+  "Type": "Element",
+  "Id": "4FX0kSLGeEyS5_HpAzhmvQ",
+  "Reference": "u70FNKxx7EOHPBwkfez66Q/4FX0kSLGeEyS5_HpAzhmvQ",
+  "ParentRef": "u70FNKxx7EOHPBwkfez66Q/UmS19dN0zUWOJxKKh_x_TA",
+  "Created": "2026-07-03T22:26:37.1852322Z",
+  "Updated": "2026-07-03T22:26:37.1852322Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

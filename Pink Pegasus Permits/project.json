@@ -9,11 +9,11 @@
     "DRACOE.PopUps.64": "[1.0.9]",
     "UiPath.Excel.Activities": "[2.23.5]",
     "UiPath.Mail.Activities": "[1.23.11]",
-    "UiPath.PDF.Activities": "[3.6.0]",
+    "UiPath.PDF.Activities": "[4.3.0]",
     "UiPath.System.Activities": "[24.10.8]",
     "UiPath.Testing.Activities": "[23.10.1]",
     "UiPath.UIAutomation.Activities": "[24.10.16]",
-    "UiPath.WebAPI.Activities": "[2.3.2]"
+    "UiPath.WebAPI.Activities": "[2.4.0]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -48,7 +48,29 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [],
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "eb832161-9152-4a81-9186-f9de336da09b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Process\\Process Subflows\\Pegasus-TC.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "3b8e3caf-48c8-4992-90a1-c8bcc5d6cf8b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Process\\Process Subflows\\Read Split File-TC.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "8e6000be-f13d-4216-8079-c682b7cbbadf",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Process\\Process Subflows\\Pagasus Upload - TC.xaml"
+      }
+    ],
     "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
