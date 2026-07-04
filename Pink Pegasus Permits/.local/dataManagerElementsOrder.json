@@ -12,12 +12,13 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "g_arrCaseID&f00b02f5-f1e3-44c6-81bd-4d9a94c25d5f",
-        "g_Config&f00b02f5-f1e3-44c6-81bd-4d9a94c25d5f",
-        "g_swProcessingTimer&f00b02f5-f1e3-44c6-81bd-4d9a94c25d5f",
-        "g_intExitPoint&f00b02f5-f1e3-44c6-81bd-4d9a94c25d5f",
-        "g_BearerToken&f00b02f5-f1e3-44c6-81bd-4d9a94c25d5f",
-        "g_TransactionItem&f00b02f5-f1e3-44c6-81bd-4d9a94c25d5f",
+        "g_elePegasus&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_arrCaseID&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_Config&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_swProcessingTimer&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_intExitPoint&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_BearerToken&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_TransactionItem&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
         "booExists&Sequence_93",
         "dteExpiryTime&StateMachine_1",
         "strAPI_Asset&Sequence_89",
@@ -56,12 +57,13 @@
       "Path": "Process/Process Subflows/SplitPDF.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "g_arrCaseID&f00b02f5-f1e3-44c6-81bd-4d9a94c25d5f",
-        "g_Config&f00b02f5-f1e3-44c6-81bd-4d9a94c25d5f",
-        "g_swProcessingTimer&f00b02f5-f1e3-44c6-81bd-4d9a94c25d5f",
-        "g_intExitPoint&f00b02f5-f1e3-44c6-81bd-4d9a94c25d5f",
-        "g_BearerToken&f00b02f5-f1e3-44c6-81bd-4d9a94c25d5f",
-        "g_TransactionItem&f00b02f5-f1e3-44c6-81bd-4d9a94c25d5f",
+        "g_elePegasus&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_arrCaseID&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_Config&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_swProcessingTimer&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_intExitPoint&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_BearerToken&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_TransactionItem&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
         "intPageCount&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
@@ -72,18 +74,13 @@
       "Path": "Process/Process Transaction.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "g_arrCaseID&f00b02f5-f1e3-44c6-81bd-4d9a94c25d5f",
-        "g_Config&f00b02f5-f1e3-44c6-81bd-4d9a94c25d5f",
-        "g_swProcessingTimer&f00b02f5-f1e3-44c6-81bd-4d9a94c25d5f",
-        "g_intExitPoint&f00b02f5-f1e3-44c6-81bd-4d9a94c25d5f",
-        "g_BearerToken&f00b02f5-f1e3-44c6-81bd-4d9a94c25d5f",
-        "g_TransactionItem&f00b02f5-f1e3-44c6-81bd-4d9a94c25d5f",
-        "g_arrCaseID&e6146ab3-ac71-4831-b9f0-58332258d872",
-        "g_Config&e6146ab3-ac71-4831-b9f0-58332258d872",
-        "g_swProcessingTimer&e6146ab3-ac71-4831-b9f0-58332258d872",
-        "g_intExitPoint&e6146ab3-ac71-4831-b9f0-58332258d872",
-        "g_BearerToken&e6146ab3-ac71-4831-b9f0-58332258d872",
-        "g_TransactionItem&e6146ab3-ac71-4831-b9f0-58332258d872"
+        "g_elePegasus&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_arrCaseID&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_Config&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_swProcessingTimer&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_intExitPoint&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_BearerToken&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_TransactionItem&a56cd3ae-1a5c-49d2-9069-42f27fe97c96"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
@@ -93,12 +90,14 @@
       "Path": "Process/Process Subflows/Read Split File.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "g_arrCaseID&f00b02f5-f1e3-44c6-81bd-4d9a94c25d5f",
-        "g_Config&f00b02f5-f1e3-44c6-81bd-4d9a94c25d5f",
-        "g_swProcessingTimer&f00b02f5-f1e3-44c6-81bd-4d9a94c25d5f",
-        "g_intExitPoint&f00b02f5-f1e3-44c6-81bd-4d9a94c25d5f",
-        "g_BearerToken&f00b02f5-f1e3-44c6-81bd-4d9a94c25d5f",
-        "g_TransactionItem&f00b02f5-f1e3-44c6-81bd-4d9a94c25d5f",
+        "g_elePegasus&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_arrCaseID&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_Config&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_swProcessingTimer&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_intExitPoint&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_BearerToken&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_TransactionItem&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "strReference&Sequence_1",
         "strText&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
@@ -109,6 +108,12 @@
       "Path": "Framework/GetTransactionData.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "g_arrCaseID&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_Config&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_swProcessingTimer&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_intExitPoint&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_BearerToken&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_TransactionItem&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
         "g_arrCaseID&e6146ab3-ac71-4831-b9f0-58332258d872",
         "g_Config&e6146ab3-ac71-4831-b9f0-58332258d872",
         "g_swProcessingTimer&e6146ab3-ac71-4831-b9f0-58332258d872",
@@ -128,6 +133,128 @@
         "in_strProcessType",
         "in_boolContinue"
       ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Process/Process Subflows/Read Split File-TC.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "g_arrCaseID&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_Config&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_swProcessingTimer&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_intExitPoint&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_BearerToken&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_TransactionItem&a56cd3ae-1a5c-49d2-9069-42f27fe97c96"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Process/Process Subflows/Pegasus.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strSearchResult&Sequence_2",
+        "g_elePegasus&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_arrCaseID&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_Config&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_swProcessingTimer&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_intExitPoint&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_BearerToken&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_TransactionItem&a56cd3ae-1a5c-49d2-9069-42f27fe97c96"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strDropdown&Sequence_10",
+        "g_elePegasus&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_arrCaseID&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_Config&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_swProcessingTimer&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_intExitPoint&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_BearerToken&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_TransactionItem&a56cd3ae-1a5c-49d2-9069-42f27fe97c96"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Process/Process Subflows/Pegasus-TC.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strDropdown&Sequence_5",
+        "g_arrCaseID&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_Config&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_swProcessingTimer&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_intExitPoint&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_BearerToken&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_TransactionItem&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_elePegasus&a56cd3ae-1a5c-49d2-9069-42f27fe97c96"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Process/Process Subflows/Pegasus Upload.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "jsonResults&Sequence_2",
+        "strSymbol&Sequence_2",
+        "strOutput&Sequence_2",
+        "dtSearchResults&Sequence_2",
+        "g_arrCaseID&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_Config&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_swProcessingTimer&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_intExitPoint&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_BearerToken&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_TransactionItem&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_elePegasus&a56cd3ae-1a5c-49d2-9069-42f27fe97c96"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Process/Process Subflows/Pagasus Upload - TC.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strDropdown&Sequence_5",
+        "g_arrCaseID&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_Config&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_swProcessingTimer&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_intExitPoint&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_BearerToken&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_TransactionItem&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_elePegasus&a56cd3ae-1a5c-49d2-9069-42f27fe97c96"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "js test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strJunk&Sequence_2",
+        "jsonResults&Sequence_2",
+        "strOutput&Sequence_2",
+        "g_arrCaseID&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_Config&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_swProcessingTimer&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_intExitPoint&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_BearerToken&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_TransactionItem&a56cd3ae-1a5c-49d2-9069-42f27fe97c96",
+        "g_elePegasus&a56cd3ae-1a5c-49d2-9069-42f27fe97c96"
+      ],
+      "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }

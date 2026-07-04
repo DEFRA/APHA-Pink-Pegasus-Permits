@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Pegasus_Upload" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Pegasus_Upload_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Pegasus_Upload" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Pegasus_Upload_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -44,6 +44,14 @@
       <x:String>UiPath.Shared.ObjectLibrary</x:String>
       <x:String>UiPath.CV.Activities</x:String>
       <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -113,37 +121,63 @@
       <AssemblyReference>UiPath.CV</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Pegasus_Upload" sap:VirtualizedContainerService.HintSize="902,402.84000000000003" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Pegasus_Upload" sap:VirtualizedContainerService.HintSize="884.8,930.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Edge Permits Pink Robots View 1 - Dynamics 36" sap:VirtualizedContainerService.HintSize="502,328.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[g_elePegasus]" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[g_elePegasus]" ScopeGuid="3a000271-daa8-426f-ac26-d2866fc13096" Version="V2">
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Edge Permits Pink Robots View 1 - Dynamics 36" sap:VirtualizedContainerService.HintSize="502,907.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[g_elePegasus]" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[g_elePegasus]" ScopeGuid="3a000271-daa8-426f-ac26-d2866fc13096" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,167.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,746" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="dtSearchResults" />
+              <Variable x:TypeArguments="x:String" Name="strOutput" />
+              <Variable x:TypeArguments="x:String" Name="strSymbol" />
+              <Variable x:TypeArguments="njl:JArray" Name="jsonResults" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign DisplayName="Assign - get submission number" sap:VirtualizedContainerService.HintSize="434,107.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <uix:NInjectJsScript InputParameter="{x:Null}" sap2010:Annotation.AnnotationText="no reliable selector to latch on to even with anchor. ms dynamics makes it dynamic. extract datatable activity also failed after refreshing the page. this is why i had to use javascript" DelayAfter="0" DelayBefore="0" DisplayName="Inject Js Script 'Get Table data'" sap:VirtualizedContainerService.HintSize="434,361.6" sap2010:WorkflowViewState.IdRef="NInjectJsScript_1" ScopeIdentifier="3a000271-daa8-426f-ac26-d2866fc13096" ScriptCode="[Directory.GetCurrentDirectory + &quot;\Assets\script.js&quot;]" Version="V4">
+              <uix:NInjectJsScript.ScriptOutput>
+                <OutArgument x:TypeArguments="x:String">[strOutput]</OutArgument>
+              </uix:NInjectJsScript.ScriptOutput>
+              <uix:NInjectJsScript.Target>
+                <uix:TargetAnchorable BrowserURL="defra-apha-cites-pre.crm4.dynamics.com/main.aspx" ContentHash="tiiouwGURUuzll_4jrsYtA" DesignTimeRectangle="526, 421, 2245, 1865" DesignTimeScaleFactor="2.5" FullSelectorArgument="&lt;webctrl id='dataSetRoot*' tag='SECTION' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SECTION' type='' class='pa-g pa-de pa-h pa-iq pa-bt pa-ir flexbox' aaname='' check:text='Focused viewFocused viewShow ChartShow ChartNewCreate a new Permit record.New&amp;#xA;&amp;#xA;Create a new Permit record.RefreshRefreshVisualize this viewVisualize this view in Power BIVisualize this view&amp;#xA;&amp;#xA;Visualize this view in Power BIMore commands for PermitPress Enter to open flyoutSharePink Robots View 1*Open popup to change view.Edit the view by adding, removing or re-ordering columns.Edit the view with advanced filter queries.23GBA105YDDGXDrag here to set row groupsDrag here to set column labels&amp;#xA;                &amp;#xA;                &amp;#xA;                    &amp;#xA;                &amp;#xA;            Toggle selection of all rows&amp;#xA;                &amp;#xA;                &amp;#xA;                    &amp;#xA;                &amp;#xA;            NameName&amp;#xA;                &amp;#xA;                &amp;#xA;                    &amp;#xA;                &amp;#xA;            SubmissionSubmission&amp;#xA;                &amp;#xA;                &amp;#xA;                    &amp;#xA;                &amp;#xA;            ApplicationApplication&amp;#xA;                &amp;#xA;                &amp;#xA;                    &amp;#xA;                &amp;#xA;            Species (Application)Species (Application)&amp;#xA;                &amp;#xA;                &amp;#xA;                    &amp;#xA;                &amp;#xA;            Status ReasonStatus Reason23GBA105YDDGX23GBA105YDDGXH7V8R3H7V8R3H7V8R3/001H7V8R3/001Falco rusticolusFalco rusticolusDraftDraft&amp;#xA;            &amp;#xA;                &amp;#xA;            &amp;#xA;        &amp;#xA;            &amp;#xA;            &amp;#xA;                &amp;#xA;            &amp;#xA;            &amp;#xA;        &amp;#xA;            &amp;#xA;                &amp;#xA;            &amp;#xA;        &amp;#xA;                &amp;#xA;                    &amp;#xA;                    to&amp;#xA;                    &amp;#xA;                    of&amp;#xA;                    &amp;#xA;                &amp;#xA;                &amp;#xA;                    &amp;#xA;                    &amp;#xA;                    &amp;#xA;                        Page&amp;#xA;                        &amp;#xA;                        of&amp;#xA;                        &amp;#xA;                    &amp;#xA;                    &amp;#xA;                    &amp;#xA;                &amp;#xA;            &amp;#xA;                &amp;#xA;            Rows: 1Press enter to modify editable cells' /&gt;" Guid="691aba00-692b-4c27-be25-8c17403269c3" InformativeScreenshot="ea7df8926d09ec007c6f6526b418d4d7.png" Reference="u70FNKxx7EOHPBwkfez66Q/4FX0kSLGeEyS5_HpAzhmvQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Permits Pink Robots View 1 - Dynamics 365' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NInjectJsScript.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NInjectJsScript>
+            <Assign DisplayName="Assign - get symbol" sap:VirtualizedContainerService.HintSize="434,114.8" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
-                <OutArgument x:TypeArguments="x:Object">[g_Config("Submission")]</OutArgument>
+                <OutArgument x:TypeArguments="x:String">[strSymbol]</OutArgument>
               </Assign.To>
               <Assign.Value>
-                <InArgument x:TypeArguments="x:Object">[dtSearchResults(0)("Submission").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String">[regex.match(strOutput,"(?&lt;=Submission).*?(?="")").Value]</InArgument>
               </Assign.Value>
             </Assign>
+            <ui:DeserializeJsonArray DisplayName="Deserialize JSON Array" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="DeserializeJsonArray_1" JsonArray="[jsonResults]" JsonString="[strOutput.Replace(strSymbol,&quot;&quot;)]" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[jsonResults(0)(&quot;Submission&quot;).ToString]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>

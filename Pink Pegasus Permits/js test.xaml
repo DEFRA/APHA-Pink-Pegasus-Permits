@@ -152,7 +152,7 @@
               </Assign.Value>
             </Assign>
             <ui:DeserializeJsonArray DisplayName="Deserialize JSON Array" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="DeserializeJsonArray_2" JsonArray="[jsonResults]" JsonString="[strOutput.Replace(strjunk,&quot;&quot;)]" />
-            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,114.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[jsonResults.ToString]" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,114.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[jsonResults(0)(&quot;Submission&quot;).ToString]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
