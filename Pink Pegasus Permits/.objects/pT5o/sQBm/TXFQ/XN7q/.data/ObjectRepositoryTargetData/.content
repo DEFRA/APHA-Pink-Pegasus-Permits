@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="CreEsMQWXUi3uJeThSzwlA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="ac6c0d67-9958-4e03-9592-294ed22ac96b" CvElementArea="474, 1552, 1413, 55" CvType="InputBox" DesignTimeRectangle="482, 1563, 1358, 41" DesignTimeScaleFactor="2.5" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='File name:' cls='Edit' /&gt;" Guid="d8201612-3ef0-466b-892f-98ff4a38250f" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ac6c0d67-9958-4e03-9592-294ed22ac96b" CvTextArea="328, 1565, 137, 32" CvTextArgument="File name:" CvType="Text" DesignTimeRectangle="331, 1562, 134, 41" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' check:text='File &amp;amp;name:' /&gt;" Guid="23cd1283-36d6-4457-ae85-0191bfaa411e" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0aeabc2f94fce727168a2a2a507d58b5.png" xmlns="">0srQcNDlhWkO6GtPeBEyMJA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

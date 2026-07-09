@@ -52,6 +52,8 @@
       <x:String>System.Dynamic</x:String>
       <x:String>System.Collections.Specialized</x:String>
       <x:String>UiPath.Web.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -129,21 +131,25 @@
       <AssemblyReference>System.IO.Packaging</AssemblyReference>
       <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Pegasus_Upload" sap:VirtualizedContainerService.HintSize="884.8,930.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Pegasus_Upload" sap:VirtualizedContainerService.HintSize="884.8,3394" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="strSubmissionNo" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Edge Permits Pink Robots View 1 - Dynamics 36" sap:VirtualizedContainerService.HintSize="502,907.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[g_elePegasus]" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[g_elePegasus]" ScopeGuid="3a000271-daa8-426f-ac26-d2866fc13096" Version="V2">
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Edge Permits Pink Robots View 1 - Dynamics 36" sap:VirtualizedContainerService.HintSize="536,1184" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[g_elePegasus]" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[g_elePegasus]" ScopeGuid="3a000271-daa8-426f-ac26-d2866fc13096" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,746" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="502,1014" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="dtSearchResults" />
               <Variable x:TypeArguments="x:String" Name="strOutput" />
@@ -155,7 +161,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NInjectJsScript InputParameter="{x:Null}" sap2010:Annotation.AnnotationText="no reliable selector to latch on to even with anchor. ms dynamics makes it dynamic. extract datatable activity also failed after refreshing the page. this is why i had to use javascript" DelayAfter="0" DelayBefore="0" DisplayName="Inject Js Script 'Get Table data'" sap:VirtualizedContainerService.HintSize="434,361.6" sap2010:WorkflowViewState.IdRef="NInjectJsScript_1" ScopeIdentifier="3a000271-daa8-426f-ac26-d2866fc13096" ScriptCode="[Directory.GetCurrentDirectory + &quot;\Assets\script.js&quot;]" Version="V4">
+            <uix:NInjectJsScript InputParameter="{x:Null}" sap2010:Annotation.AnnotationText="no reliable selector to latch on to even with anchor. ms dynamics makes it dynamic. extract datatable activity also failed after refreshing the page. this is why i had to use javascript" DelayAfter="0" DelayBefore="0" DisplayName="Inject Js Script 'Get Table data'" sap:VirtualizedContainerService.HintSize="468,361.6" sap2010:WorkflowViewState.IdRef="NInjectJsScript_1" ScopeIdentifier="3a000271-daa8-426f-ac26-d2866fc13096" ScriptCode="[Directory.GetCurrentDirectory + &quot;\Assets\script.js&quot;]" Version="V4">
               <uix:NInjectJsScript.ScriptOutput>
                 <OutArgument x:TypeArguments="x:String">[strOutput]</OutArgument>
               </uix:NInjectJsScript.ScriptOutput>
@@ -168,7 +174,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NInjectJsScript>
-            <Assign DisplayName="Assign - get symbol" sap:VirtualizedContainerService.HintSize="434,114.8" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign DisplayName="Assign - get symbol" sap:VirtualizedContainerService.HintSize="468,114.8" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[strSymbol]</OutArgument>
               </Assign.To>
@@ -176,13 +182,131 @@
                 <InArgument x:TypeArguments="x:String">[regex.match(strOutput,"(?&lt;=Submission).*?(?="")").Value]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:DeserializeJsonArray DisplayName="Deserialize JSON Array" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="DeserializeJsonArray_1" JsonArray="[jsonResults]" JsonString="[strOutput.Replace(strSymbol,&quot;&quot;)]" />
-            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[jsonResults(0)(&quot;Submission&quot;).ToString]" />
+            <ui:DeserializeJsonArray DisplayName="Deserialize JSON Array" sap:VirtualizedContainerService.HintSize="468,92" sap2010:WorkflowViewState.IdRef="DeserializeJsonArray_1" JsonArray="[jsonResults]" JsonString="[strOutput.Replace(strSymbol,&quot;&quot;)]" />
+            <Sequence DisplayName="click reference number" sap:VirtualizedContainerService.HintSize="468,384" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign sap:VirtualizedContainerService.HintSize="434,114.8" sap2010:WorkflowViewState.IdRef="Assign_6">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[strSubmissionNo]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[jsonResults(0)("Submission").ToString]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'Submission number'" sap:VirtualizedContainerService.HintSize="434,182.8" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3a000271-daa8-426f-ac26-d2866fc13096" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="defra-apha-cites-pre.crm4.dynamics.com/main.aspx" CVScreenId="a8af5111-39ce-435e-8598-249880669eff" ContentHash="Tt0PuF5bWUiph1mZLn88xg" DesignTimeRectangle="758, 849, 296, 47" DesignTimeScaleFactor="2.5" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='SPAN' aaname='{0}' /&gt;&quot;, strSubmissionNo)]" Guid="1cb0802d-ff84-49e9-af62-ae8cceabb487" InformativeScreenshot="fe48350e8f3f2ab49e84c0f43d19b1c8.png" Reference="u70FNKxx7EOHPBwkfez66Q/8iJjhUlXSUOfBtoH53JWAg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Permits Pink Robots View 1 - Dynamics 365' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
       <uix:NApplicationCard.TargetApp>
         <uix:TargetApp Area="-16, -16, 3872, 2312" BrowserType="Edge" ContentHash="JOEajP6BhE6D4aP4-mbY3w" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABiSURBVDhP7cyxDYBADENRT8JIrMQytwQsRUmZM5bcOdU1FFj6VfSCZ9+qC9xxobre+//gEw/WN+5q4+pEdclH6LgEnXyEjkvQyUfouASdfISOS9DJR+i4BJ18hI5L0MmvDZhNnuSD8tzgJQAAAABJRU5ErkJggg==" InformativeScreenshot="18430d60d432d4c923b84884abea691a.jpg" Reference="u70FNKxx7EOHPBwkfez66Q/UmS19dN0zUWOJxKKh_x_TA" Selector="&lt;html app='msedge.exe' title='Permits Pink Robots View 1 - Dynamics 365' /&gt;" Title="Permits Pink Robots View 1 - Dynamics 365" Url="https://defra-apha-cites-pre.crm4.dynamics.com/main.aspx?appid=dae1e2bb-a2f5-ed11-8849-000d3ab6d6a9&amp;pagetype=entitylist&amp;etn=cites_permit&amp;viewid=7cfb33fb-5675-f111-ab0d-7c1e5235daaf&amp;viewType=4230" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge Permits Pink Robots View 1 - Dynamics 36" sap:VirtualizedContainerService.HintSize="536,871.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="743eea0b-17d3-408a-abe2-b591c1681ab1" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,621.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="strClick" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'Documents Tab'" sap:VirtualizedContainerService.HintSize="382,190" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="743eea0b-17d3-408a-abe2-b591c1681ab1" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="defra-apha-cites-pre.crm4.dynamics.com/main.aspx" CVScreenId="177cf25f-8f76-40ed-ada8-40c6e7d559dd" ContentHash="9-ryXtoDvU-b3jGwTEG_jw" DesignTimeRectangle="1271, 793, 207, 112" DesignTimeScaleFactor="2.5" ElementType="ListItem" FullSelectorArgument="&lt;webctrl aria-label='Documents' /&gt;" Guid="2d7aa86f-92a8-4cdf-8135-59bd03ed09ae" InformativeScreenshot="264368b7ee94eea7cd8d67700f1f4091.png" Reference="u70FNKxx7EOHPBwkfez66Q/7BNFHnrdc0mOU4-bp01bYg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Submission: Information: B7Y4S5 - Dynamics 365' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'Upload'" sap:VirtualizedContainerService.HintSize="382,190" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="743eea0b-17d3-408a-abe2-b591c1681ab1" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="defra-apha-cites-pre.crm4.dynamics.com/main.aspx" CVScreenId="d89058d6-9c04-4703-aafb-7b9658ea2aba" ContentHash="ol_PR_coG0-Vgd3OjG9EqA" DesignTimeRectangle="3395, 1017, 112, 53" DesignTimeScaleFactor="2.5" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Upload' tag='SPAN' /&gt;" Guid="39e95b9f-6158-4410-b9c6-697a5bcd9332" InformativeScreenshot="103d43f7d6ba54de3ef9ae46c3e8f80b.png" Reference="u70FNKxx7EOHPBwkfez66Q/9tOEVQuZz0uiLH0Lxu-dYQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Submission: Information: B7Y4S5 - Dynamics 365' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="d89058d6-9c04-4703-aafb-7b9658ea2aba" CvTextArea="3390, 1025, 117, 42" CvTextArgument="Upload" CvType="Text" DesignTimeRectangle="3285, 991, 257, 105" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Upload&amp;#xA;&amp;#xA;Upload an existing document' aria-role='menuitem' tag='BUTTON' type='button' class='pa-bx pa-kr pa-lq pa-aec pa-ei pa-ct pa-ly pa-w pa-bd pa-be flexbox' aaname='Upload' check:innerText='Upload' /&gt;" Guid="1f2808bc-dc59-4859-af36-6c713e35fa51" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'Choose File'" sap:VirtualizedContainerService.HintSize="382,181.2" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="743eea0b-17d3-408a-abe2-b591c1681ab1" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="defra-apha-cites-pre.crm4.dynamics.com/main.aspx" CVScreenId="f41e0b94-a340-4f43-8839-a509119577b5" ContentHash="izU40ixes0OkqQqNaVyb_Q" DesignTimeRectangle="1658, 1055, 642, 55" DesignTimeScaleFactor="2.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='file' /&gt;" Guid="e4f61586-d4bc-40e6-ae7b-97ebed4482e2" InformativeScreenshot="178c385b4a095c7e8966dabceecaedbc.png" Reference="u70FNKxx7EOHPBwkfez66Q/Bm6jZm6HtEe4cpSaNRdVcQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Submission: Information: B7Y4S5 - Dynamics 365' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-16, -16, 3872, 2312" BrowserType="Edge" ContentHash="JOEajP6BhE6D4aP4-mbY3w" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABiSURBVDhP7cyxDYBADENRT8JIrMQytwQsRUmZM5bcOdU1FFj6VfSCZ9+qC9xxobre+//gEw/WN+5q4+pEdclH6LgEnXyEjkvQyUfouASdfISOS9DJR+i4BJ18hI5L0MmvDZhNnuSD8tzgJQAAAABJRU5ErkJggg==" InformativeScreenshot="18430d60d432d4c923b84884abea691a.jpg" Reference="u70FNKxx7EOHPBwkfez66Q/UmS19dN0zUWOJxKKh_x_TA" Selector="&lt;html app='msedge.exe' title='Permits Pink Robots View 1 - Dynamics 365' /&gt;" Title="Permits Pink Robots View 1 - Dynamics 365" Url="https://defra-apha-cites-pre.crm4.dynamics.com/main.aspx?appid=dae1e2bb-a2f5-ed11-8849-000d3ab6d6a9&amp;pagetype=entitylist&amp;etn=cites_permit&amp;viewid=7cfb33fb-5675-f111-ab0d-7c1e5235daaf&amp;viewType=4230" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Open - file explorer" sap:VirtualizedContainerService.HintSize="536,1315.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="Never" ScopeGuid="34bf689d-02b8-4704-a67d-1d174731b2af" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,997.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="strNewName" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign DisplayName="Assign - new file name" sap:VirtualizedContainerService.HintSize="434,114.8" sap2010:WorkflowViewState.IdRef="Assign_8">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[strNewName]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[strSubmissionNo + " " + g_Config("Reference").ToString + " (Pink)"]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:RenameFileX DisplayName="Rename File - rename split permit" FilePath="[g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" sap:VirtualizedContainerService.HintSize="434,180" sap2010:WorkflowViewState.IdRef="RenameFileX_1" KeepExtension="True" NewName="[strNewName]" />
+            <Assign DisplayName="Assign - update variable" sap:VirtualizedContainerService.HintSize="434,114.8" sap2010:WorkflowViewState.IdRef="Assign_7">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[g_Config("CurrentSplitFilePath")]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Object">[g_Config("SplitFileFolder").ToString + "\"+ strNewName +".pdf"]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:SetToClipboard DisplayName="Set To Clipboard - filename" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="SetToClipboard_1" Text="[g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="0" DelayBefore="0" DeselectAfter="True" DisplayName="Type Into 'File &amp;name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,252.8" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="34bf689d-02b8-4704-a67d-1d174731b2af" Text="%[d(Ctrl)]v[u(Ctrl)]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="ac6c0d67-9958-4e03-9592-294ed22ac96b" ContentHash="CreEsMQWXUi3uJeThSzwlA" CvElementArea="474, 1552, 1413, 55" CvType="InputBox" DesignTimeRectangle="482, 1563, 1358, 41" DesignTimeScaleFactor="2.5" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='File name:' cls='Edit' /&gt;" Guid="d8201612-3ef0-466b-892f-98ff4a38250f" InformativeScreenshot="0aeabc2f94fce727168a2a2a507d58b5.png" IsResponsive="True" Reference="u70FNKxx7EOHPBwkfez66Q/XN7qXomehk6Z_lrHPOmOGw" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="ac6c0d67-9958-4e03-9592-294ed22ac96b" CvTextArea="328, 1565, 137, 32" CvTextArgument="File name:" CvType="Text" DesignTimeRectangle="331, 1562, 134, 41" ElementType="Text" FullSelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' check:text='File &amp;amp;name:' /&gt;" Guid="23cd1283-36d6-4457-ae85-0191bfaa411e" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'Open'" sap:VirtualizedContainerService.HintSize="434,182.8" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="34bf689d-02b8-4704-a67d-1d174731b2af" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="ec83a166-5fa8-4e2f-bb5e-041e489dbc3c" ContentHash="LyCzb7gqpEytyX49Jjb8mg" CvElementArea="1911, 1616, 225, 69" CvTextArea="1983, 1637, 80, 35" CvTextArgument="Open" CvType="Button" DesignTimeRectangle="1916, 1621, 220, 65" DesignTimeScaleFactor="2.5" ElementType="Button" FullSelectorArgument="&lt;wnd aaname='Open' cls='Button' /&gt;" Guid="a7a1a4d2-11f7-4cc7-8acf-6be6ef870023" InformativeScreenshot="5b12975ae37322a9742e878058fb3fef.png" Reference="u70FNKxx7EOHPBwkfez66Q/b8JMuF65Jkuy5kGEFB6slQ" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 2445, 1745" ContentHash="ReeW0v4P20ifZr036pUmSQ" FilePath="C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" IconBase64="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" InformativeScreenshot="ee4062fd0a27813f30699cf758fca9b9.png" Reference="u70FNKxx7EOHPBwkfez66Q/TXFQrZnItUiKp8Aa3V7Z1w" Selector="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" Title="Open" Version="V1" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
   </Sequence>

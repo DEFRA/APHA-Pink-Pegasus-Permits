@@ -134,9 +134,9 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
-      <x:Reference>__ReferenceID12</x:Reference>
+      <x:Reference>__ReferenceID13</x:Reference>
     </Flowchart.StartNode>
-    <FlowStep x:Name="__ReferenceID12">
+    <FlowStep x:Name="__ReferenceID13">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">245,125</av:Point>
@@ -181,7 +181,7 @@
                   <av:Point x:Key="ShapeLocation">270,390</av:Point>
                   <av:Size x:Key="ShapeSize">60,60</av:Size>
                   <av:PointCollection x:Key="TrueConnector">270,420 195,420</av:PointCollection>
-                  <av:PointCollection x:Key="FalseConnector">330,420 360,420 360,625 300,625 300,655</av:PointCollection>
+                  <av:PointCollection x:Key="FalseConnector">330,420 360,420 360,655</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <FlowDecision.True>
@@ -209,7 +209,7 @@
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <av:Point x:Key="ShapeLocation">110,510</av:Point>
-                          <av:PointCollection x:Key="FalseConnector">110,540 80,540 80,690 110,690</av:PointCollection>
+                          <av:PointCollection x:Key="FalseConnector">110,540 10,540 10,690 40,690</av:PointCollection>
                           <av:Size x:Key="ShapeSize">60,60</av:Size>
                           <av:PointCollection x:Key="TrueConnector">170,540 225,540</av:PointCollection>
                         </scg:Dictionary>
@@ -220,7 +220,7 @@
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <av:Point x:Key="ShapeLocation">225,505</av:Point>
                               <av:Size x:Key="ShapeSize">110,70</av:Size>
-                              <av:PointCollection x:Key="ConnectorLocation">280,575 280,605 140,605 140,660</av:PointCollection>
+                              <av:PointCollection x:Key="ConnectorLocation">280,575 280,605 70,605 70,660</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <d:Generic_PopUp OUT_ProcessType="{x:Null}" OUT_strButtonSelected="{x:Null}" DisplayName="Generic PopUp" sap:VirtualizedContainerService.HintSize="110,70" IN_CSS_filepath="[&quot;/file://&quot; + Directory.GetCurrentDirectory + &quot;\Assets\Generic\PausePoint.css&quot;]" IN_ErrorMessage="The stop button was pressed" IN_PopupMessage="Please can you review if the search has been completed using the correct reference." IN_PopupTitle="Enter Title Text Here" IN_WidthHeight="[{500,350}]" sap2010:WorkflowViewState.IdRef="Generic_PopUp_2">
@@ -231,23 +231,26 @@
                             </sap:WorkflowViewStateService.ViewState>
                           </d:Generic_PopUp>
                           <FlowStep.Next>
-                            <FlowDecision x:Name="__ReferenceID2" Condition="[cint(g_Config(&quot;SearchResult&quot;)) &gt; 0]" DisplayName="search results" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_4">
+                            <FlowDecision x:Name="__ReferenceID2" DisplayName="search results" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_4">
+                              <FlowDecision.Condition>
+                                <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="cint(g_Config(&quot;SearchResult&quot;)) = 1" />
+                              </FlowDecision.Condition>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <av:Point x:Key="ShapeLocation">110,660</av:Point>
-                                  <av:PointCollection x:Key="TrueConnector">140,720 140,855</av:PointCollection>
+                                  <av:Point x:Key="ShapeLocation">40,660</av:Point>
+                                  <av:PointCollection x:Key="TrueConnector">70,720 70,855</av:PointCollection>
                                   <av:Size x:Key="ShapeSize">60,60</av:Size>
-                                  <av:PointCollection x:Key="FalseConnector">170,690 245,690</av:PointCollection>
+                                  <av:PointCollection x:Key="FalseConnector">100,690 155,690</av:PointCollection>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                               <FlowDecision.True>
                                 <FlowStep x:Name="__ReferenceID8">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <av:Point x:Key="ShapeLocation">85,855</av:Point>
+                                      <av:Point x:Key="ShapeLocation">15,855</av:Point>
                                       <av:Size x:Key="ShapeSize">110,70</av:Size>
-                                      <av:PointCollection x:Key="ConnectorLocation">195,890 245,890</av:PointCollection>
+                                      <av:PointCollection x:Key="ConnectorLocation">125,890 305,890</av:PointCollection>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <ds:Upload_Small_File DisplayName="Success Upload Small File" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Upload_Small_File_4" in_DestinationFilePath="[g_Config(&quot;strFolderPath&quot;).ToString +&quot;/Completed/&quot;+g_TransactionItem(&quot;Contents&quot;).tostring]" in_LocalFilePath="[g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" in_strBearerToken="[g_BearerToken]" in_strListID="[g_Config(&quot;strListID&quot;).tostring]" in_strSiteID="[g_Config(&quot;strSiteID&quot;).ToString]">
@@ -261,9 +264,9 @@
                                     <FlowStep x:Name="__ReferenceID1">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <av:Point x:Key="ShapeLocation">245,855</av:Point>
+                                          <av:Point x:Key="ShapeLocation">305,855</av:Point>
                                           <av:Size x:Key="ShapeSize">110,70</av:Size>
-                                          <av:PointCollection x:Key="ConnectorLocation">355,890 430,890</av:PointCollection>
+                                          <av:PointCollection x:Key="ConnectorLocation">415,890 480,890</av:PointCollection>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                       <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="DeleteFileX_5" Path="[g_Config(&quot;CurrentSplitFilePath&quot;).tostring]">
@@ -278,19 +281,19 @@
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                              <av:Point x:Key="ShapeLocation">430,860</av:Point>
-                                              <av:PointCollection x:Key="TrueConnector">490,890 520,890 520,270 355,270</av:PointCollection>
+                                              <av:Point x:Key="ShapeLocation">480,860</av:Point>
+                                              <av:PointCollection x:Key="TrueConnector">540,890 570,890 570,270 355,270</av:PointCollection>
                                               <av:Size x:Key="ShapeSize">60,60</av:Size>
-                                              <av:PointCollection x:Key="FalseConnector">460,920 460,985</av:PointCollection>
+                                              <av:PointCollection x:Key="FalseConnector">510,920 510,985</av:PointCollection>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                           <FlowDecision.False>
                                             <FlowStep x:Name="__ReferenceID6">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                  <av:Point x:Key="ShapeLocation">405,985</av:Point>
+                                                  <av:Point x:Key="ShapeLocation">455,985</av:Point>
                                                   <av:Size x:Key="ShapeSize">110,70</av:Size>
-                                                  <av:PointCollection x:Key="ConnectorLocation">460,1055 460,1105</av:PointCollection>
+                                                  <av:PointCollection x:Key="ConnectorLocation">510,1055 510,1085 530,1085 530,1105</av:PointCollection>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
                                               <ds:Upload_Small_File sap2010:Annotation.AnnotationText="Move the parent pdf file" DisplayName="Parent Upload Small File" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Upload_Small_File_1" in_DestinationFilePath="[g_Config(&quot;strFolderPath&quot;).ToString +&quot;/Parent Completed/&quot;+g_TransactionItem(&quot;Contents&quot;).tostring]" in_LocalFilePath="[g_Config(&quot;MainCurrentFilePath&quot;).ToString]" in_strBearerToken="[g_BearerToken]" in_strListID="[g_Config(&quot;strListID&quot;).tostring]" in_strSiteID="[g_Config(&quot;strSiteID&quot;).ToString]">
@@ -305,7 +308,7 @@
                                                 <FlowStep x:Name="__ReferenceID5">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                      <av:Point x:Key="ShapeLocation">405,1105</av:Point>
+                                                      <av:Point x:Key="ShapeLocation">475,1105</av:Point>
                                                       <av:Size x:Key="ShapeSize">110,70</av:Size>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
@@ -328,23 +331,41 @@
                                 </FlowStep>
                               </FlowDecision.True>
                               <FlowDecision.False>
-                                <FlowStep x:Name="__ReferenceID3">
+                                <FlowStep x:Name="__ReferenceID12">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <av:Point x:Key="ShapeLocation">245,655</av:Point>
+                                      <av:Point x:Key="ShapeLocation">155,655</av:Point>
+                                      <av:PointCollection x:Key="ConnectorLocation">265,690 305,690</av:PointCollection>
                                       <av:Size x:Key="ShapeSize">110,70</av:Size>
-                                      <av:PointCollection x:Key="ConnectorLocation">300,725 300,855</av:PointCollection>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ds:Upload_Small_File DisplayName="Exception Upload Small File" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Upload_Small_File_5" in_DestinationFilePath="[g_Config(&quot;strFolderPath&quot;).ToString +&quot;/Completed/&quot;+g_TransactionItem(&quot;Contents&quot;).tostring]" in_LocalFilePath="[g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" in_strBearerToken="[g_BearerToken]" in_strListID="[g_Config(&quot;strListID&quot;).tostring]" in_strSiteID="[g_Config(&quot;strSiteID&quot;).ToString]">
+                                  <ui:LogMessage DisplayName="No Unique result" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Warn" Message="[&quot;Unique result not found: &quot; + g_Config(&quot;SearchResult&quot;).ToString + &quot; Reference: &quot; + g_Config(&quot;Reference&quot;).ToString]">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                  </ds:Upload_Small_File>
+                                  </ui:LogMessage>
                                   <FlowStep.Next>
-                                    <x:Reference>__ReferenceID1</x:Reference>
+                                    <FlowStep x:Name="__ReferenceID3">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <av:Point x:Key="ShapeLocation">305,655</av:Point>
+                                          <av:Size x:Key="ShapeSize">110,70</av:Size>
+                                          <av:PointCollection x:Key="ConnectorLocation">360,725 360,855</av:PointCollection>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ds:Upload_Small_File DisplayName="Exception Upload Small File" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Upload_Small_File_5" in_DestinationFilePath="[g_Config(&quot;strFolderPath&quot;).ToString +&quot;/Completed/&quot;+g_TransactionItem(&quot;Contents&quot;).tostring]" in_LocalFilePath="[g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" in_strBearerToken="[g_BearerToken]" in_strListID="[g_Config(&quot;strListID&quot;).tostring]" in_strSiteID="[g_Config(&quot;strSiteID&quot;).ToString]">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ds:Upload_Small_File>
+                                      <FlowStep.Next>
+                                        <x:Reference>__ReferenceID1</x:Reference>
+                                      </FlowStep.Next>
+                                    </FlowStep>
                                   </FlowStep.Next>
                                 </FlowStep>
                               </FlowDecision.False>
@@ -379,24 +400,6 @@
     <x:Reference>__ReferenceID2</x:Reference>
     <x:Reference>__ReferenceID10</x:Reference>
     <x:Reference>__ReferenceID11</x:Reference>
-    <FlowStep>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">385,705</av:Point>
-          <av:Size x:Key="ShapeSize">110,70</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">440,705 440,690 355,690</av:PointCollection>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <ui:Comment DisplayName="more than 1?" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Comment_2" Text="error? or that will never happen?">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:Comment>
-      <FlowStep.Next>
-        <x:Reference>__ReferenceID3</x:Reference>
-      </FlowStep.Next>
-    </FlowStep>
+    <x:Reference>__ReferenceID12</x:Reference>
   </Flowchart>
 </Activity>
