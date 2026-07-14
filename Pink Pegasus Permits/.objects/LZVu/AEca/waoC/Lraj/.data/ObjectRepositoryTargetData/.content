@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Hvp4x7OCxE6g6xIeUDf3kA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="defra-apha-cites-pre.crm4.dynamics.com/main.aspx" DesignTimeRectangle="526, 1030, 2200, 1256" DesignTimeScaleFactor="2.5" FullSelectorArgument="&lt;webctrl tag='DIV' aria-label='Documents' /&gt;" Guid="17a031ed-cc45-49aa-bee7-a15a6361bbb2" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Submission: Information: F5R4Q4 - Dynamics 365' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="82eb5d63ae2ec5d3c087d0ad965dc4a9.png" xmlns="">0LR2m3u-wVU6x2lNH0fy3PA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">InjectJsScript</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

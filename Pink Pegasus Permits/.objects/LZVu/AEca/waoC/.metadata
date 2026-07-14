@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Submission Information F5R4Q4 - Dynamics(1)",
+  "Type": "Screen",
+  "Id": "waoCyoDSR0qDW1YJvmkAaA",
+  "Reference": "u70FNKxx7EOHPBwkfez66Q/waoCyoDSR0qDW1YJvmkAaA",
+  "ParentRef": "u70FNKxx7EOHPBwkfez66Q/AEcaOTkGz0Gz46sIWYJ3cA",
+  "Created": "2026-07-10T08:54:55.012161Z",
+  "Updated": "2026-07-10T08:54:55.012161Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
