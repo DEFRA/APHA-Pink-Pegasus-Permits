@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ALuZqhgVoEiLvg9St4lR7g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="defra-apha-cites-pre.crm4.dynamics.com/main.aspx" CVScreenId="09cc484a-4688-4ece-bb33-60d221ee98dd" DesignTimeRectangle="1658, 1055, 642, 55" DesignTimeScaleFactor="2.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='file' /&gt;" Guid="36a52442-cad8-433d-8b7b-8324b626c69a" ImageBase64="" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Submission: Information: T1Z9X104 - Dynamics 365' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="09cc484a-4688-4ece-bb33-60d221ee98dd" CvTextArea="1195, 1067, 177, 40" CvTextArgument="File Upload" CvType="Text" DesignTimeRectangle="1198, 1060, 440, 50" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='File Upload' tag='LABEL' type='' class='pa-ca pa-oz ' check:innerText='File Upload' /&gt;" Guid="b83c9021-9a27-4208-bb99-d5b9489cf1d8" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="94eadfa5bbb76ce2b12ecac592c8a717.png" xmlns="">0s9xj5M1e6UiuqoUU7HByKQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

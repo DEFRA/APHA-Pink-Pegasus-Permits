@@ -106,19 +106,19 @@
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Pegasus" sap:VirtualizedContainerService.HintSize="884.8,1076.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Pegasus" sap:VirtualizedContainerService.HintSize="880.8,1078.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Edge Permits All Permits - Dynamics 365(1)" sap:VirtualizedContainerService.HintSize="502,1053.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[g_elePegasus]" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[g_elePegasus]" ScopeGuid="06aaca5f-5afe-4168-8856-e53b5c36195c" Version="V2">
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Edge Permits All Permits - Dynamics 365(1)" sap:VirtualizedContainerService.HintSize="502,1055.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[g_elePegasus]" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[g_elePegasus]" ScopeGuid="06aaca5f-5afe-4168-8856-e53b5c36195c" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,892.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,894" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="strSearchResult" />
             </Sequence.Variables>
@@ -143,16 +143,16 @@
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="defra-apha-cites-pre.crm4.dynamics.com/main.aspx" CVScreenId="140cd505-a275-4487-ac36-762ba1f43322" ContentHash="Mzo_8XfCFkCXGeIwc_hSvw" CvElementArea="2524, 579, 450, 82" CvType="InputBox" DesignTimeRectangle="2546, 587, 426, 71" DesignTimeScaleFactor="2.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='quickFind_text_*' tag='INPUT' aria-role='searchbox' /&gt;" FuzzySelectorArgument="&lt;webctrl id='quickFind_text_*' tag='INPUT' aria-role='searchbox' type='' class='ms-SearchBox-field field-157' placeholder='Filter by keyword' aaname='' /&gt;" Guid="181238e8-4fb3-4ca7-a362-25ec184e7fd3" InformativeScreenshot="1c29c7f61d0859a1f0ba7cda5c9ca533.png" IsResponsive="True" Reference="u70FNKxx7EOHPBwkfez66Q/qSrk0i1YgEqa26gSyAbkYQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Permits Pink Robots View 1 - Dynamics 365' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="140cd505-a275-4487-ac36-762ba1f43322" CvTextArea="2315, 610, 160, 35" CvTextArgument="Edit filters" CvType="Text" DesignTimeRectangle="2321, 610, 153, 35" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='id__17' tag='SPAN' type='' class='ms-Button-label label-150' aaname='Edit filters' check:innerText='Edit filters' /&gt;" Guid="55fb0641-a078-4eaa-a66f-cde70d0b2612" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NGetText DelayAfter="0" DelayBefore="0" DisplayName="Get Text 'Rows Returned'" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="06aaca5f-5afe-4168-8856-e53b5c36195c" TextString="[strSearchResult]" Version="V4">
+            <uix:NGetText DelayAfter="0" DelayBefore="1" DisplayName="Get Text 'Rows Returned'" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="06aaca5f-5afe-4168-8856-e53b5c36195c" TextString="[strSearchResult]" Version="V4">
               <uix:NGetText.Target>
-                <uix:TargetAnchorable BrowserURL="defra-apha-cites-pre.crm4.dynamics.com/main.aspx" CVScreenId="c8d4c39e-c3e8-4040-9452-655ab5212108" ContentHash="4NRXpR8YCU2_-zWzMv_Hgg" CvTextArea="615, 2170, 122, 35" CvType="AnyWordGroup" DesignTimeRectangle="618, 2163, 117, 50" DesignTimeScaleFactor="2.5" ElementType="Text" FullSelectorArgument="&lt;webctrl class='statusTextContainer*' tag='SPAN' aaname='Rows: *' /&gt;" FuzzySelectorArgument="&lt;webctrl class='statusTextContainer*' tag='SPAN' type='' /&gt;" Guid="fe495fbf-1058-49a7-9ae0-a8832c72f9cf" ImageBase64="" InformativeScreenshot="dc820d9d7a72ba06ec3857b2677902fb.png" Reference="u70FNKxx7EOHPBwkfez66Q/EI7jV_PUlECf0i3UB4ZIIA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Permits Pink Robots View 1 - Dynamics 365' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                <uix:TargetAnchorable BrowserURL="defra-apha-cites-pre.crm4.dynamics.com/main.aspx" CVScreenId="c8d4c39e-c3e8-4040-9452-655ab5212108" ContentHash="5OPoHKQQtEmwiCP_ov-iOA" CvTextArea="615, 2170, 122, 35" CvType="AnyWordGroup" DesignTimeRectangle="618, 2163, 117, 50" DesignTimeScaleFactor="2.5" ElementType="Text" FullSelectorArgument="&lt;webctrl class='statusTextContainer*' tag='SPAN' aaname='Rows: *' /&gt;" FuzzySelectorArgument="&lt;webctrl class='statusTextContainer*' tag='SPAN' type='' /&gt;" Guid="fe495fbf-1058-49a7-9ae0-a8832c72f9cf" ImageBase64="" InformativeScreenshot="dc820d9d7a72ba06ec3857b2677902fb.png" Reference="u70FNKxx7EOHPBwkfez66Q/EI7jV_PUlECf0i3UB4ZIIA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Permits Pink Robots View 1 - Dynamics 365' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Visible" />
               </uix:NGetText.Target>
             </uix:NGetText>
             <Assign DisplayName="Assign - format search result" sap:VirtualizedContainerService.HintSize="434,107.6" sap2010:WorkflowViewState.IdRef="Assign_2">
