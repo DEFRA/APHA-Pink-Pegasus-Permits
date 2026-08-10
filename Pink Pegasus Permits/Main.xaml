@@ -173,7 +173,7 @@
       <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <StateMachine InitialState="{x:Reference __ReferenceID5}" DisplayName="Automation Template" sap:VirtualizedContainerService.HintSize="898,241.704" sap2010:WorkflowViewState.IdRef="StateMachine_1">
+  <StateMachine InitialState="{x:Reference __ReferenceID5}" DisplayName="Automation Template" sap:VirtualizedContainerService.HintSize="898,395.30400000000003" sap2010:WorkflowViewState.IdRef="StateMachine_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1686,7 +1686,7 @@
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              <av:PointCollection x:Key="ConnectorLocation">307.79999999999995,485.8 307.79999999999995,455.8 531.8000000000001,455.8 531.8000000000001,492.2</av:PointCollection>
+                              <av:PointCollection x:Key="ConnectorLocation">307.79999999999995,485.8 307.79999999999995,455.79999999999995 531.8000000000001,455.79999999999995 531.8000000000001,492.2</av:PointCollection>
                               <x:Int32 x:Key="SrcConnectionPointIndex">38</x:Int32>
                               <x:Int32 x:Key="DestConnectionPointIndex">18</x:Int32>
                             </scg:Dictionary>
@@ -1699,7 +1699,7 @@
                         <Transition DisplayName="End Process" sap:VirtualizedContainerService.HintSize="449.6,1106.4" sap2010:WorkflowViewState.IdRef="Transition_13">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <av:PointCollection x:Key="ConnectorLocation">307.79999999999995,485.8 307.79999999999995,455.8 145.5,455.8 145.5,488</av:PointCollection>
+                              <av:PointCollection x:Key="ConnectorLocation">307.79999999999995,485.8 307.79999999999995,455.79999999999995 145.5,455.79999999999995 145.5,488</av:PointCollection>
                               <x:Int32 x:Key="SrcConnectionPointIndex">38</x:Int32>
                               <x:Int32 x:Key="DestConnectionPointIndex">66</x:Int32>
                             </scg:Dictionary>
