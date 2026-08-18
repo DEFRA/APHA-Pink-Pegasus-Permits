@@ -101,9 +101,12 @@
       <AssemblyReference>System.Linq.Parallel</AssemblyReference>
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Example_Subflow" sap:VirtualizedContainerService.HintSize="898,658.84" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Example_Subflow" sap:VirtualizedContainerService.HintSize="880.8,627.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="intPageCount" />
     </Sequence.Variables>
