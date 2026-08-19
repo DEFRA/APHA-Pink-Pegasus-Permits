@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ddQjhgSxdkO2cuv85Ec4sw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="defra-apha-cites-pre.crm4.dynamics.com/main.aspx" CVScreenId="68d048f8-e8d5-4926-b8e6-25ab9c072eb1" CvElementArea="1049, 619, 53, 48" CvTextArea="612, 617, 430, 47" CvTextArgument="Pink Robots View 1" CvType="ArrowButton" DesignTimeRectangle="593, 596, 522, 94" DesignTimeScaleFactor="2.5" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Pink Robots View 1' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Pink Robots View 1' tag='BUTTON' type='button' class='ms-Button ms-Button--default ms-Button--hasMenu root-138' aaname='Pink Robots View 1' check:innerText='Pink Robots View 1&amp;#xA;Open popup to change view.&amp;#xA;' /&gt;" Guid="11f1e0e6-da36-41da-bb08-df767279817b" ImageBase64="" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Permits Pink Robots View 1 - Dynamics 365' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="68d048f8-e8d5-4926-b8e6-25ab9c072eb1" CvTextArea="612, 617, 430, 47" CvTextArgument="Pink Robots View 1" CvType="Text" DesignTimeRectangle="605, 608, 448, 70" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='id__11' tag='SPAN' type='' class='ms-Button-label label-142' aaname='Pink Robots View 1' check:innerText='Pink Robots View 1' /&gt;" Guid="895b4893-ecb3-420b-b012-755510957bf4" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d9abe02d382c2b04355ceb5558b08be3.png" xmlns="">0IfUIPcp01Uih40txt6KZGw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

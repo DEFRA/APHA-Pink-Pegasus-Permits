@@ -1,0 +1,13 @@
+﻿{
+  "Name": "NewNewCreate a new docu…",
+  "Type": "Element",
+  "Id": "LrajS_WnOEWkvocSphr2zw",
+  "Reference": "u70FNKxx7EOHPBwkfez66Q/LrajS_WnOEWkvocSphr2zw",
+  "ParentRef": "u70FNKxx7EOHPBwkfez66Q/waoCyoDSR0qDW1YJvmkAaA",
+  "Created": "2026-07-10T10:36:10.3484555Z",
+  "Updated": "2026-07-10T10:36:10.3484555Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

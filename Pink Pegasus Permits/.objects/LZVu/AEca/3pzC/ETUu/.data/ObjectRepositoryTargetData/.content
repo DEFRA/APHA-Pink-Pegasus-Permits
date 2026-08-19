@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="g_LMoa8Yzkeyepn33zBLTA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="defra-apha-cites-pre.crm4.dynamics.com/main.aspx" CVScreenId="d980a72c-7631-4b98-89b1-98e2bfe362f1" CvElementArea="1153, 606, 51, 46" CvTextArea="613, 602, 532, 48" CvTextArgument="Pink Robots Test View 1" CvType="ArrowButton" DesignTimeRectangle="568, 557, 1360, 140" DesignTimeScaleFactor="2.5" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-role='presentation' tag='DIV' visibleinnertext='*Open popup to change view.&amp;#xA;' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='DIV' visibleinnertext='*Open popup to change view.&amp;#xA;' type='' class='pa-jk pa-jl pa-gv pa-w pa-by pa-g pa-l pa-bk pa-ag flexbox' aaname='' /&gt;" Guid="18d143b0-615d-45e1-911a-72c2bf4221d7" ImageBase64="" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Permits Pink Robots Test View 1 - Dynamics 365' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d980a72c-7631-4b98-89b1-98e2bfe362f1" CvTextArea="613, 602, 532, 48" CvTextArgument="Pink Robots Test View 1" CvType="Text" DesignTimeRectangle="605, 592, 551, 70" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='id__11' tag='SPAN' type='' class='ms-Button-label label-139' aaname='Pink Robots Test View 1' check:innerText='Pink Robots Test View 1' /&gt;" Guid="cc2ff3d5-cdda-4646-a31b-4de52b05cac1" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3ecb13a4e92a5cf952ee11fc11b3ed2a.png" xmlns="">0GKsXD6QkbkmGe3998Qlydw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

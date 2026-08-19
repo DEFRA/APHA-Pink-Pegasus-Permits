@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Permits Pink Robots View 1 - Dynamics 36",
+  "Type": "Screen",
+  "Id": "UmS19dN0zUWOJxKKh_x_TA",
+  "Reference": "u70FNKxx7EOHPBwkfez66Q/UmS19dN0zUWOJxKKh_x_TA",
+  "ParentRef": "u70FNKxx7EOHPBwkfez66Q/AEcaOTkGz0Gz46sIWYJ3cA",
+  "Created": "2026-07-03T11:11:07.5912247Z",
+  "Updated": "2026-07-03T11:11:07.5912247Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

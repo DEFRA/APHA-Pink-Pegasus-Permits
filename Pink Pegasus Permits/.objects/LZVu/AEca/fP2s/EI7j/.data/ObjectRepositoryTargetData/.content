@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="5OPoHKQQtEmwiCP_ov-iOA" Reference="u70FNKxx7EOHPBwkfez66Q/EI7jV_PUlECf0i3UB4ZIIA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="defra-apha-cites-pre.crm4.dynamics.com/main.aspx" CVScreenId="c8d4c39e-c3e8-4040-9452-655ab5212108" CvTextArea="615, 2170, 122, 35" CvType="AnyWordGroup" DesignTimeRectangle="618, 2163, 117, 50" DesignTimeScaleFactor="2.5" ElementType="Text" FullSelectorArgument="&lt;webctrl class='statusTextContainer*' tag='SPAN' aaname='Rows: *' /&gt;" FuzzySelectorArgument="&lt;webctrl class='statusTextContainer*' tag='SPAN' type='' /&gt;" Guid="fe495fbf-1058-49a7-9ae0-a8832c72f9cf" ImageBase64="" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Permits Pink Robots View 1 - Dynamics 365' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Visible">
+      <imageRef attrName="InformativeScreenshot" originalValue="dc820d9d7a72ba06ec3857b2677902fb.png" xmlns="">0VLisZDNmckGo9usLq9O4tA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

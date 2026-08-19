@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LCk_8iZBW0mNLi75H-Jr9g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="defra-apha-cites-pre.crm4.dynamics.com/main.aspx" CVScreenId="ff0b96d8-6620-4cc1-bb92-e72d17ac1070" DesignTimeRectangle="1658, 1055, 642, 55" DesignTimeScaleFactor="2.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='file' /&gt;" Guid="0d0c4207-48b5-4b68-ab4d-c23f03a9497c" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Submission: Information: T1Z9X104 - Dynamics 365' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="5aeac7865d8558104125b9ff53cedc15.png" xmlns="">0dJZdRtoZOUGzXkSN6vABhw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

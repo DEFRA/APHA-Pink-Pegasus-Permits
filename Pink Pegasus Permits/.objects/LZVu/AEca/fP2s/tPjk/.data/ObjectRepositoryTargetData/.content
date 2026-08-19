@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="H9sDqeie7kigDYSz1pFgUA" Reference="u70FNKxx7EOHPBwkfez66Q/tPjkIt6aqEqdp_jMZjDPfw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="defra-apha-cites-pre.crm4.dynamics.com/main.aspx" CVScreenId="197734be-004c-49e5-9038-b0bc18827641" CvElementArea="3170, 594, 454, 86" CvType="InputBox" DesignTimeRectangle="3266, 603, 356, 71" DesignTimeScaleFactor="2.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='quickFind_text_0' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='quickFind_text_0' tag='INPUT' type='' class='ms-SearchBox-field field-137' placeholder='Filter by keyword' aaname='' /&gt;" Guid="8e90d8e5-7acd-4a16-9d63-fd90fa2b5132" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Permits All Permits - Dynamics 365' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="197734be-004c-49e5-9038-b0bc18827641" CvTextArea="2967, 625, 157, 35" CvTextArgument="Edit filters" CvType="Text" DesignTimeRectangle="2971, 626, 153, 35" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='id__17' tag='SPAN' type='' class='ms-Button-label label-153' aaname='Edit filters' check:innerText='Edit filters' /&gt;" Guid="db6034d1-fa52-48df-aea8-2198ee69209b" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ddf56115c061d125844e8906082a1c4c.png" xmlns="">0wE7GssSlS0yZ0J1pNjENMw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
