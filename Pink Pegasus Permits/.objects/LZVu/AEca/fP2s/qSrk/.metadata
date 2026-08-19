@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Edit filters(1)",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "qSrk0i1YgEqa26gSyAbkYQ",
+  "Reference": "u70FNKxx7EOHPBwkfez66Q/qSrk0i1YgEqa26gSyAbkYQ",
+  "ParentRef": "u70FNKxx7EOHPBwkfez66Q/fP2sMgmDKUS97Zbt3bXbyw",
+  "Created": "2026-07-01T20:30:35.0774213Z",
+  "Updated": "2026-07-01T20:30:35.0774213Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

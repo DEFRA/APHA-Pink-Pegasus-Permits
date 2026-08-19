@@ -1,0 +1,177 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Pegasus" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Pegasus_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Persistence.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Form.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Pegasus" sap:VirtualizedContainerService.HintSize="880.8,1078.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Edge Permits All Permits - Dynamics 365(1)" sap:VirtualizedContainerService.HintSize="502,1055.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[g_elePegasus]" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[g_elePegasus]" ScopeGuid="06aaca5f-5afe-4168-8856-e53b5c36195c" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,894" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="strSearchResult" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'Edit filters'" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06aaca5f-5afe-4168-8856-e53b5c36195c" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="defra-apha-cites-pre.crm4.dynamics.com/main.aspx" CVScreenId="197734be-004c-49e5-9038-b0bc18827641" ContentHash="H9sDqeie7kigDYSz1pFgUA" CvElementArea="3170, 594, 454, 86" CvType="InputBox" DesignTimeRectangle="3266, 603, 356, 71" DesignTimeScaleFactor="2.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='quickFind_text_0' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='quickFind_text_0' tag='INPUT' type='' class='ms-SearchBox-field field-137' placeholder='Filter by keyword' aaname='' /&gt;" Guid="8e90d8e5-7acd-4a16-9d63-fd90fa2b5132" InformativeScreenshot="ddf56115c061d125844e8906082a1c4c.png" IsResponsive="True" Reference="u70FNKxx7EOHPBwkfez66Q/tPjkIt6aqEqdp_jMZjDPfw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Permits All Permits - Dynamics 365' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="197734be-004c-49e5-9038-b0bc18827641" CvTextArea="2967, 625, 157, 35" CvTextArgument="Edit filters" CvType="Text" DesignTimeRectangle="2971, 626, 153, 35" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='id__17' tag='SPAN' type='' class='ms-Button-label label-153' aaname='Edit filters' check:innerText='Edit filters' /&gt;" Guid="db6034d1-fa52-48df-aea8-2198ee69209b" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:SetToClipboard DisplayName="Set To Clipboard - reference" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="SetToClipboard_1" Text="[g_Config(&quot;Reference&quot;).ToString]" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayAfter="0" DelayBefore="0" DelayBetweenKeys="0" DisplayName="Type Into 'paste in filters'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,252.8" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="06aaca5f-5afe-4168-8856-e53b5c36195c" Text="%[d(Ctrl)]v[u(Ctrl)][k(Enter)]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="defra-apha-cites-pre.crm4.dynamics.com/main.aspx" CVScreenId="140cd505-a275-4487-ac36-762ba1f43322" ContentHash="Mzo_8XfCFkCXGeIwc_hSvw" CvElementArea="2524, 579, 450, 82" CvType="InputBox" DesignTimeRectangle="2546, 587, 426, 71" DesignTimeScaleFactor="2.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='quickFind_text_*' tag='INPUT' aria-role='searchbox' /&gt;" FuzzySelectorArgument="&lt;webctrl id='quickFind_text_*' tag='INPUT' aria-role='searchbox' type='' class='ms-SearchBox-field field-157' placeholder='Filter by keyword' aaname='' /&gt;" Guid="181238e8-4fb3-4ca7-a362-25ec184e7fd3" InformativeScreenshot="1c29c7f61d0859a1f0ba7cda5c9ca533.png" IsResponsive="True" Reference="u70FNKxx7EOHPBwkfez66Q/qSrk0i1YgEqa26gSyAbkYQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Permits Pink Robots View 1 - Dynamics 365' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="140cd505-a275-4487-ac36-762ba1f43322" CvTextArea="2315, 610, 160, 35" CvTextArgument="Edit filters" CvType="Text" DesignTimeRectangle="2321, 610, 153, 35" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='id__17' tag='SPAN' type='' class='ms-Button-label label-150' aaname='Edit filters' check:innerText='Edit filters' /&gt;" Guid="55fb0641-a078-4eaa-a66f-cde70d0b2612" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NGetText DelayAfter="0" DelayBefore="1" DisplayName="Get Text 'Rows Returned'" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="06aaca5f-5afe-4168-8856-e53b5c36195c" TextString="[strSearchResult]" Version="V4">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="defra-apha-cites-pre.crm4.dynamics.com/main.aspx" CVScreenId="c8d4c39e-c3e8-4040-9452-655ab5212108" ContentHash="5OPoHKQQtEmwiCP_ov-iOA" CvTextArea="615, 2170, 122, 35" CvType="AnyWordGroup" DesignTimeRectangle="618, 2163, 117, 50" DesignTimeScaleFactor="2.5" ElementType="Text" FullSelectorArgument="&lt;webctrl class='statusTextContainer*' tag='SPAN' aaname='Rows: *' /&gt;" FuzzySelectorArgument="&lt;webctrl class='statusTextContainer*' tag='SPAN' type='' /&gt;" Guid="fe495fbf-1058-49a7-9ae0-a8832c72f9cf" ImageBase64="" InformativeScreenshot="dc820d9d7a72ba06ec3857b2677902fb.png" Reference="u70FNKxx7EOHPBwkfez66Q/EI7jV_PUlECf0i3UB4ZIIA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Permits Pink Robots View 1 - Dynamics 365' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Visible" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <Assign DisplayName="Assign - format search result" sap:VirtualizedContainerService.HintSize="434,107.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[g_Config("SearchResult")]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Object">[strSearchResult.ToLower.Replace("rows:","").Trim]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-16, -16, 3872, 2312" BrowserType="Edge" ContentHash="uWrFMFCSCESljMyZoT1sNQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABiSURBVDhP7cyxDYBADENRT8JIrMQytwQsRUmZM5bcOdU1FFj6VfSCZ9+qC9xxobre+//gEw/WN+5q4+pEdclH6LgEnXyEjkvQyUfouASdfISOS9DJR+i4BJ18hI5L0MmvDZhNnuSD8tzgJQAAAABJRU5ErkJggg==" InformativeScreenshot="ca3dd9352fc231479b92f65cce4cc604.jpg" Reference="u70FNKxx7EOHPBwkfez66Q/fP2sMgmDKUS97Zbt3bXbyw" Selector="&lt;html app='msedge.exe' title='*Dynamics 365' /&gt;" Title="Permits All Permits - Dynamics 365" Url="https://defra-apha-cites-pre.crm4.dynamics.com/main.aspx?appid=dae1e2bb-a2f5-ed11-8849-000d3ab6d6a9&amp;pagetype=entitylist&amp;etn=cites_permit&amp;viewid=9c4e59f6-087b-ed11-81ad-00224843874c&amp;viewType=1039" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

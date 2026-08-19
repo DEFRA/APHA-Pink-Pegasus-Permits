@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Mzo_8XfCFkCXGeIwc_hSvw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="defra-apha-cites-pre.crm4.dynamics.com/main.aspx" CVScreenId="140cd505-a275-4487-ac36-762ba1f43322" CvElementArea="2524, 579, 450, 82" CvType="InputBox" DesignTimeRectangle="2546, 587, 426, 71" DesignTimeScaleFactor="2.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='quickFind_text_*' tag='INPUT' aria-role='searchbox' /&gt;" FuzzySelectorArgument="&lt;webctrl id='quickFind_text_*' tag='INPUT' aria-role='searchbox' type='' class='ms-SearchBox-field field-157' placeholder='Filter by keyword' aaname='' /&gt;" Guid="181238e8-4fb3-4ca7-a362-25ec184e7fd3" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Permits Pink Robots View 1 - Dynamics 365' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="140cd505-a275-4487-ac36-762ba1f43322" CvTextArea="2315, 610, 160, 35" CvTextArgument="Edit filters" CvType="Text" DesignTimeRectangle="2321, 610, 153, 35" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='id__17' tag='SPAN' type='' class='ms-Button-label label-150' aaname='Edit filters' check:innerText='Edit filters' /&gt;" Guid="55fb0641-a078-4eaa-a66f-cde70d0b2612" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1c29c7f61d0859a1f0ba7cda5c9ca533.png" xmlns="">0l3GJflNqYkq9gaIwrwNOEw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

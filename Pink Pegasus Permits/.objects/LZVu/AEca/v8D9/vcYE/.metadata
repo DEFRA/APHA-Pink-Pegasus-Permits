@@ -1,0 +1,14 @@
+﻿{
+  "Name": "File Upload",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "vcYECVQGn0C7BUrACr3faA",
+  "Reference": "u70FNKxx7EOHPBwkfez66Q/vcYECVQGn0C7BUrACr3faA",
+  "ParentRef": "u70FNKxx7EOHPBwkfez66Q/v8D9E2NmPEWs3Tx0oylR8Q",
+  "Created": "2026-07-16T07:06:59.3464848Z",
+  "Updated": "2026-07-16T07:06:59.3464848Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

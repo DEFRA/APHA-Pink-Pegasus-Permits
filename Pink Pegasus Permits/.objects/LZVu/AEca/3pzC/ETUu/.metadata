@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Pink Robots Test View 1",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "ETUuVP0B-kOgaBKJFf2vzA",
+  "Reference": "u70FNKxx7EOHPBwkfez66Q/ETUuVP0B-kOgaBKJFf2vzA",
+  "ParentRef": "u70FNKxx7EOHPBwkfez66Q/3pzCnkv0YU-g7ZVwQM0Mcg",
+  "Created": "2026-07-01T20:21:49.2149959Z",
+  "Updated": "2026-07-01T20:21:49.2149959Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

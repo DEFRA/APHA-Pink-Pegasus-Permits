@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Permits All Permits - Dynamics 365(1)",
+  "Type": "Screen",
+  "Id": "fP2sMgmDKUS97Zbt3bXbyw",
+  "Reference": "u70FNKxx7EOHPBwkfez66Q/fP2sMgmDKUS97Zbt3bXbyw",
+  "ParentRef": "u70FNKxx7EOHPBwkfez66Q/AEcaOTkGz0Gz46sIWYJ3cA",
+  "Created": "2026-07-01T11:29:37.9866704Z",
+  "Updated": "2026-07-01T11:29:37.9866704Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

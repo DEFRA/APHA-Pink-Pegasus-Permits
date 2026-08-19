@@ -1,0 +1,14 @@
+﻿{
+  "Name": "All PermitsOpen popup t…",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "9_1_99XrhEyU77_ZeNtKsg",
+  "Reference": "u70FNKxx7EOHPBwkfez66Q/9_1_99XrhEyU77_ZeNtKsg",
+  "ParentRef": "u70FNKxx7EOHPBwkfez66Q/3pzCnkv0YU-g7ZVwQM0Mcg",
+  "Created": "2026-07-01T11:05:11.0203396Z",
+  "Updated": "2026-07-01T11:05:11.0203396Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

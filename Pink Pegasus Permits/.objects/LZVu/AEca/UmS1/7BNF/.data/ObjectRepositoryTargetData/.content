@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9-ryXtoDvU-b3jGwTEG_jw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="defra-apha-cites-pre.crm4.dynamics.com/main.aspx" CVScreenId="177cf25f-8f76-40ed-ada8-40c6e7d559dd" DesignTimeRectangle="1271, 793, 207, 112" DesignTimeScaleFactor="2.5" ElementType="ListItem" FullSelectorArgument="&lt;webctrl aria-label='Documents' /&gt;" Guid="2d7aa86f-92a8-4cdf-8135-59bd03ed09ae" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Submission: Information: B7Y4S5 - Dynamics 365' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="264368b7ee94eea7cd8d67700f1f4091.png" xmlns="">0iJ6fTxNWeUasPXtp7J-H-Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

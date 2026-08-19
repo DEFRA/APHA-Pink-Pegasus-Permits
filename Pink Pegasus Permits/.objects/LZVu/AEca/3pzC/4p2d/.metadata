@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Pink Robots View 1Open …",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "4p2d7msJ0E62GcqoWdWlPg",
+  "Reference": "u70FNKxx7EOHPBwkfez66Q/4p2d7msJ0E62GcqoWdWlPg",
+  "ParentRef": "u70FNKxx7EOHPBwkfez66Q/3pzCnkv0YU-g7ZVwQM0Mcg",
+  "Created": "2026-07-01T14:29:09.9373228Z",
+  "Updated": "2026-07-01T14:29:09.9373228Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

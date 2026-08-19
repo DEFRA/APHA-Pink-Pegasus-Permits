@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Submission Information R7F9S5 - Dynamics",
+  "Type": "Screen",
+  "Id": "_a6s9uTUHkq7oF6r68ms2A",
+  "Reference": "u70FNKxx7EOHPBwkfez66Q/_a6s9uTUHkq7oF6r68ms2A",
+  "ParentRef": "u70FNKxx7EOHPBwkfez66Q/AEcaOTkGz0Gz46sIWYJ3cA",
+  "Created": "2026-07-15T21:27:46.0540299Z",
+  "Updated": "2026-07-15T21:27:46.0540299Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

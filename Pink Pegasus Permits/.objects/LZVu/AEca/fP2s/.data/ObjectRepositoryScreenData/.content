@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="uWrFMFCSCESljMyZoT1sNQ" Reference="u70FNKxx7EOHPBwkfez66Q/fP2sMgmDKUS97Zbt3bXbyw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-16, -16, 3872, 2312" BrowserType="Edge" ContentHash="h_uMPHmmMUuE6txrxo1RVQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABiSURBVDhP7cyxDYBADENRT8JIrMQytwQsRUmZM5bcOdU1FFj6VfSCZ9+qC9xxobre+//gEw/WN+5q4+pEdclH6LgEnXyEjkvQyUfouASdfISOS9DJR+i4BJ18hI5L0MmvDZhNnuSD8tzgJQAAAABJRU5ErkJggg==" Reference="u70FNKxx7EOHPBwkfez66Q/fP2sMgmDKUS97Zbt3bXbyw" Selector="&lt;html app='msedge.exe' title='*Dynamics 365' /&gt;" Title="Permits All Permits - Dynamics 365" Url="https://defra-apha-cites-pre.crm4.dynamics.com/main.aspx?appid=dae1e2bb-a2f5-ed11-8849-000d3ab6d6a9&amp;pagetype=entitylist&amp;etn=cites_permit&amp;viewid=9c4e59f6-087b-ed11-81ad-00224843874c&amp;viewType=1039" Version="V1">
+      <imageRef attrName="InformativeScreenshot" originalValue="ca3dd9352fc231479b92f65cce4cc604.jpg" xmlns="">0j2J_-dpTEE6PMUIIoFmu5Q</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Upload",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "9tOEVQuZz0uiLH0Lxu-dYQ",
+  "Reference": "u70FNKxx7EOHPBwkfez66Q/9tOEVQuZz0uiLH0Lxu-dYQ",
+  "ParentRef": "u70FNKxx7EOHPBwkfez66Q/UmS19dN0zUWOJxKKh_x_TA",
+  "Created": "2026-07-07T12:43:41.449121Z",
+  "Updated": "2026-07-07T12:43:41.449121Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
