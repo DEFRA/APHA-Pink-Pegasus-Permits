@@ -160,7 +160,7 @@
       <AssemblyReference>System.Diagnostics.TextWriterTraceListener</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " sap:VirtualizedContainerService.HintSize="898,402.84000000000003" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " sap:VirtualizedContainerService.HintSize="898,658.84" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -406,7 +406,7 @@
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <uix:NApplicationCard sap2010:Annotation.AnnotationText="This takes the pages back to the main screen" AttachMode="SingleWindow" CloseMode="Never" DisplayName="Edge Submission Information F5R4Q4 - Dynamics" sap:VirtualizedContainerService.HintSize="502,410.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InUiElement="[g_elePegasus]" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[g_elePegasus]" ScopeGuid="6d97464b-63a3-4886-a260-6fb737c91251" Version="V2">
+                                                        <uix:NApplicationCard sap2010:Annotation.AnnotationText="This takes the pages back to the main screen" AttachMode="SingleWindow" CloseMode="Never" DisplayName="Edge Submission Information F5R4Q4 - Dynamics" sap:VirtualizedContainerService.HintSize="502,370.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InUiElement="[g_elePegasus]" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[g_elePegasus]" ScopeGuid="6d97464b-63a3-4886-a260-6fb737c91251" Version="V2">
                                                           <uix:NApplicationCard.Body>
                                                             <ActivityAction x:TypeArguments="x:Object">
                                                               <ActivityAction.Argument>

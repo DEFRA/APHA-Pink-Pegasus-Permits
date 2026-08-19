@@ -176,7 +176,7 @@
       <AssemblyReference>System.CodeDom</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Get a transaction item from a specified source (e.g., Orchestrator queues, spreadsheets, databases, mailboxes or web APIs). &#xA;&#xA;This framework is setup by default to look for an Outlook MailMessage from a config-specified mailbox, this should be changed on a work package basis with out_TransactionItem being set to a single transaction from whatever source is required.&#xA;&#xA;If there are no transaction items remaining, out_TransactionItem should be set to Nothing, which leads to the End Process state. &#xA;&#xA;out_boolLastTransaction should be set to True where it is possible to determine that a transaction is the last in the batch. If this is not possible to derive then changes will need to be made to the &quot;Final Transaction&quot; transition at the framework's parent level. " DisplayName="Get Transaction Data" sap:VirtualizedContainerService.HintSize="880.8,2706.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Get a transaction item from a specified source (e.g., Orchestrator queues, spreadsheets, databases, mailboxes or web APIs). &#xA;&#xA;This framework is setup by default to look for an Outlook MailMessage from a config-specified mailbox, this should be changed on a work package basis with out_TransactionItem being set to a single transaction from whatever source is required.&#xA;&#xA;If there are no transaction items remaining, out_TransactionItem should be set to Nothing, which leads to the End Process state. &#xA;&#xA;out_boolLastTransaction should be set to True where it is possible to determine that a transaction is the last in the batch. If this is not possible to derive then changes will need to be made to the &quot;Final Transaction&quot; transition at the framework's parent level. " DisplayName="Get Transaction Data" sap:VirtualizedContainerService.HintSize="880.8,2676.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtToProcess" />
       <Variable x:TypeArguments="sd:DataTable" Name="dtContents" />
@@ -187,11 +187,10 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:Comment sap:VirtualizedContainerService.HintSize="536,206" sap2010:WorkflowViewState.IdRef="Comment_1" Text="1 - get folder contents&#xA;&#xA;2 - check how many pdf's in folder&#xA;0 - end no transaction&#xA;1+ get top pdf - download pdf to robot in progress folder&#xA;&#xA;pass filepath into transaction variable" />
     <ds:Get_Folder_Contents DisplayName="Get Folder Contents" sap:VirtualizedContainerService.HintSize="536,332.8" sap2010:WorkflowViewState.IdRef="Get_Folder_Contents_1" in_strBearerToken="[g_BearerToken]" in_strFolderPath="[g_Config(&quot;strFolderPath&quot;).ToString+&quot;/Process&quot;]" in_strListID="[g_Config(&quot;strListID&quot;).ToString]" in_strSiteID="[g_Config(&quot;strSiteID&quot;).ToString]" out_dtContents="[dtContents]" />
-    <If Condition="[dtContents.RowCount&gt;0]" DisplayName="Retrieved Emails?" sap:VirtualizedContainerService.HintSize="536,2067.2" sap2010:WorkflowViewState.IdRef="If_1">
+    <If Condition="[dtContents.RowCount&gt;0]" DisplayName="Retrieved Emails?" sap:VirtualizedContainerService.HintSize="536,2242.8" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="502,1739.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="502,1914.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <Sequence.Variables>
             <Variable x:TypeArguments="sn:NetworkCredential" Name="credNetworkCredentials" />
             <Variable x:TypeArguments="sd:DataRow" Name="rowCurrentMessage" />
@@ -253,6 +252,7 @@
             </If.Else>
           </If>
           <ds:Download_File DisplayName="Download File - get first PDF" sap:VirtualizedContainerService.HintSize="468,332.8" sap2010:WorkflowViewState.IdRef="Download_File_1" in_SPOLFilePath="[g_Config(&quot;strFolderPath&quot;).ToString +&quot;/Process/&quot;+dtContents(0)(&quot;Contents&quot;).tostring]" in_strBearerToken="[g_BearerToken]" in_strListID="[g_Config(&quot;strListID&quot;).ToString]" in_strSaveToFilePath="[g_Config(&quot;LocalDataPath&quot;).ToString +&quot;\InProgress\&quot; + dtContents(0)(&quot;Contents&quot;).tostring]" in_strSiteID="[g_Config(&quot;strSiteID&quot;).ToString]" />
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="468,175.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Reviewing file: &quot; + dtContents(0)(&quot;Contents&quot;).tostring]" />
           <Assign DisplayName="Assign current mail message in progress" sap:VirtualizedContainerService.HintSize="468,105.6" sap2010:WorkflowViewState.IdRef="Assign_9">
             <Assign.To>
               <OutArgument x:TypeArguments="sd:DataRow">[g_TransactionItem]</OutArgument>

@@ -128,7 +128,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Read_Split_File" sap:VirtualizedContainerService.HintSize="880.8,1552.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Read_Split_File" sap:VirtualizedContainerService.HintSize="880.8,1728.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strText" />
       <Variable x:TypeArguments="x:String" Name="strReference" />
@@ -146,6 +146,7 @@
         <InArgument x:TypeArguments="x:Object">[Directory.GetFiles(g_Config("SplitFileFolder").ToString)(0)]</InArgument>
       </Assign.Value>
     </Assign>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="502,175.6" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" />
     <ui:ReadPDFText PreserveFormatting="{x:Null}" ResourceFile="{x:Null}" DisplayName="Read PDF Text" FileName="[g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" sap:VirtualizedContainerService.HintSize="502,124" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[strText]">
       <ui:ReadPDFText.Item>
         <upap:ItemArgument x:TypeArguments="upr:IResource" ResourceFile="{x:Null}" FileName="[g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" />
