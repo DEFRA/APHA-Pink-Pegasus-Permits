@@ -261,7 +261,7 @@
                               <av:PointCollection x:Key="ConnectorLocation">300,575 300,605 70,605 70,660</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Sequence DisplayName="PP1" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                          <Sequence DisplayName="PP1" sap:VirtualizedContainerService.HintSize="450,826.4" sap2010:WorkflowViewState.IdRef="Sequence_8">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -272,7 +272,7 @@
                                 <InArgument x:TypeArguments="sd:Stopwatch">[g_swProcessingTimer]</InArgument>
                               </InvokeMethod.TargetObject>
                             </InvokeMethod>
-                            <d:Generic_PopUp OUT_ProcessType="{x:Null}" OUT_strButtonSelected="{x:Null}" DisplayName="Generic PopUp PP1" sap:VirtualizedContainerService.HintSize="416,437.6" IN_CSS_filepath="[&quot;/file://&quot; + Directory.GetCurrentDirectory + &quot;\Assets\Generic\PausePoint.css&quot;]" IN_ErrorMessage="The stop button was pressed" IN_PopupMessage="Please can you review if the search has been completed using the correct reference." IN_PopupTitle="PausePoint1" IN_WidthHeight="[{500,150}]" sap2010:WorkflowViewState.IdRef="Generic_PopUp_5">
+                            <d:Generic_PopUp OUT_ProcessType="{x:Null}" OUT_strButtonSelected="{x:Null}" DisplayName="Generic PopUp PP1" sap:VirtualizedContainerService.HintSize="416,437.6" IN_CSS_filepath="[&quot;/file://&quot; + Directory.GetCurrentDirectory + &quot;\Assets\Generic\PausePoint.css&quot;]" IN_ErrorMessage="The stop button was pressed" IN_PopupMessage="[&quot;Please can you review if the search has been completed using the correct reference. &lt;br&gt;File: &quot; + g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" IN_PopupTitle="PausePoint1" IN_WidthHeight="[{500,150}]" sap2010:WorkflowViewState.IdRef="Generic_PopUp_5">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
