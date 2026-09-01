@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="LyCzb7gqpEytyX49Jjb8mg" Reference="u70FNKxx7EOHPBwkfez66Q/b8JMuF65Jkuy5kGEFB6slQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="htrfPVsxvUSkmDQWecbugw" Reference="u70FNKxx7EOHPBwkfez66Q/b8JMuF65Jkuy5kGEFB6slQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="ec83a166-5fa8-4e2f-bb5e-041e489dbc3c" CvElementArea="1911, 1616, 225, 69" CvTextArea="1983, 1637, 80, 35" CvTextArgument="Open" CvType="Button" DesignTimeRectangle="1916, 1621, 220, 65" DesignTimeScaleFactor="2.5" ElementType="Button" FullSelectorArgument="&lt;wnd aaname='Open' cls='Button' /&gt;" Guid="a7a1a4d2-11f7-4cc7-8acf-6be6ef870023" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="5b12975ae37322a9742e878058fb3fef.png" xmlns="">05fiT-7jXi0iEXEYdjpdIew</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="ec83a166-5fa8-4e2f-bb5e-041e489dbc3c" CvElementArea="1911, 1616, 225, 69" CvTextArea="1983, 1637, 80, 35" CvTextArgument="Open" CvType="Button" DesignTimeRectangle="1916, 1621, 220, 65" DesignTimeScaleFactor="2.5" ElementType="Button" FullSelectorArgument="&lt;wnd aaname='Open' cls='Button' /&gt;" Guid="a7a1a4d2-11f7-4cc7-8acf-6be6ef870023" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="5b12975ae37322a9742e878058fb3fef.png" xmlns="">0jeTSOQXYkEWz22mbCAR_5w</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>
