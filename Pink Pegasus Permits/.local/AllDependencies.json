@@ -202,7 +202,7 @@
           }
         }
       },
-      "DRACOE.Logging.64/1.0.17": {
+      "DRACOE.Logging.64/1.0.20": {
         "type": "package",
         "dependencies": {
           "UiPath.Database.Activities": "1.7.1",
@@ -216,16 +216,16 @@
         },
         "runtime": {
           "lib/net8.0-windows7.0/DRACOE.Logging.64.dll": {},
-          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_11319666.dll": {},
-          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_20317549.dll": {},
-          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_22899537.dll": {},
-          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_26813034.dll": {},
-          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_30956752.dll": {},
-          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_35559462.dll": {},
-          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_38391691.dll": {},
-          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_41575456.dll": {},
-          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_44681534.dll": {},
-          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_4582681.dll": {}
+          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_13347359.dll": {},
+          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_2211873.dll": {},
+          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_23377896.dll": {},
+          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_26846586.dll": {},
+          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_32976623.dll": {},
+          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_33644450.dll": {},
+          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_33980578.dll": {},
+          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_45708743.dll": {},
+          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_52597625.dll": {},
+          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_64725245.dll": {}
         },
         "contentFiles": {
           "contentFiles/any/any/_._": {
@@ -7320,7 +7320,7 @@
           }
         }
       },
-      "DRACOE.Logging.64/1.0.17": {
+      "DRACOE.Logging.64/1.0.20": {
         "type": "package",
         "dependencies": {
           "UiPath.Database.Activities": "1.7.1",
@@ -7334,16 +7334,16 @@
         },
         "runtime": {
           "lib/net8.0-windows7.0/DRACOE.Logging.64.dll": {},
-          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_11319666.dll": {},
-          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_20317549.dll": {},
-          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_22899537.dll": {},
-          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_26813034.dll": {},
-          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_30956752.dll": {},
-          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_35559462.dll": {},
-          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_38391691.dll": {},
-          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_41575456.dll": {},
-          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_44681534.dll": {},
-          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_4582681.dll": {}
+          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_13347359.dll": {},
+          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_2211873.dll": {},
+          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_23377896.dll": {},
+          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_26846586.dll": {},
+          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_32976623.dll": {},
+          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_33644450.dll": {},
+          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_33980578.dll": {},
+          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_45708743.dll": {},
+          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_52597625.dll": {},
+          "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_64725245.dll": {}
         },
         "contentFiles": {
           "contentFiles/any/any/_._": {
@@ -14312,10 +14312,10 @@
         "lib/netstandard2.0/DocumentFormat.OpenXml.xml"
       ]
     },
-    "DRACOE.Logging.64/1.0.17": {
-      "sha512": "6dPG6Lb30RXyOZ2pYporHo/5g+xAovJhq2QmGk+lFN/EGZwD0rUiwPrX1U72r81hBfKMBMXcT/Cg9Pu/nzOTyA==",
+    "DRACOE.Logging.64/1.0.20": {
+      "sha512": "4v5IOqhEVA1S9C7UMHVWfZp6yw/4JNThP0vz2Hfa2oQsjBL50J/xvGJXTukLFaqc+D5FLxmjHiMTRsc+PusVsA==",
       "type": "package",
-      "path": "dracoe.logging.64/1.0.17",
+      "path": "dracoe.logging.64/1.0.20",
       "files": [
         ".nupkg.metadata",
         "content/.project/PackageBindingsMetadata.json",
@@ -14354,19 +14354,19 @@
         "content/project.json",
         "contentFiles/any/any/.objects/.metadata",
         "contentFiles/any/any/.objects/.type",
-        "dracoe.logging.64.1.0.17.nupkg.sha512",
+        "dracoe.logging.64.1.0.20.nupkg.sha512",
         "dracoe.logging.64.nuspec",
         "lib/net8.0-windows7.0/DRACOE.Logging.64.dll",
-        "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_11319666.dll",
-        "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_20317549.dll",
-        "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_22899537.dll",
-        "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_26813034.dll",
-        "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_30956752.dll",
-        "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_35559462.dll",
-        "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_38391691.dll",
-        "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_41575456.dll",
-        "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_44681534.dll",
-        "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_4582681.dll"
+        "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_13347359.dll",
+        "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_2211873.dll",
+        "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_23377896.dll",
+        "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_26846586.dll",
+        "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_32976623.dll",
+        "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_33644450.dll",
+        "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_33980578.dll",
+        "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_45708743.dll",
+        "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_52597625.dll",
+        "lib/net8.0-windows7.0/DRACOE.Logging.64_Expressions_64725245.dll"
       ]
     },
     "DRACOE.Microsoft.Graph.64/1.0.54": {
@@ -28002,7 +28002,7 @@
   "projectFileDependencyGroups": {
     "": [],
     "net8.0-windows7.0": [
-      "DRACOE.Logging.64 >= 1.0.17 <= 1.0.17",
+      "DRACOE.Logging.64 >= 1.0.20 <= 1.0.20",
       "DRACOE.Microsoft.Graph.64 >= 1.0.54 <= 1.0.54",
       "DRACOE.Orchestrator.Jobs.64bit >= 1.0.2 <= 1.0.2",
       "DRACOE.PopUps.64 >= 1.0.9 <= 1.0.9",
@@ -28032,7 +28032,7 @@
           "DRACOE.Logging.64": {
             "include": "Runtime",
             "target": "Package",
-            "version": "[1.0.17, 1.0.17]"
+            "version": "[1.0.20, 1.0.20]"
           },
           "DRACOE.Microsoft.Graph.64": {
             "include": "Runtime",
@@ -28099,7 +28099,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: DRACOE.Logging.64 1.0.17 requires UiPath.Excel.Activities (= 2.22.3) but version UiPath.Excel.Activities 2.23.5 was resolved.",
+      "message": "Detected package version outside of dependency constraint: DRACOE.Logging.64 1.0.20 requires UiPath.Excel.Activities (= 2.22.3) but version UiPath.Excel.Activities 2.23.5 was resolved.",
       "libraryId": "UiPath.Excel.Activities",
       "targetGraphs": [
         "net8.0-windows7.0",
@@ -28110,7 +28110,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: DRACOE.Logging.64 1.0.17 requires UiPath.System.Activities (= 23.10.6) but version UiPath.System.Activities 24.10.8 was resolved.",
+      "message": "Detected package version outside of dependency constraint: DRACOE.Logging.64 1.0.20 requires UiPath.System.Activities (= 23.10.6) but version UiPath.System.Activities 24.10.8 was resolved.",
       "libraryId": "UiPath.System.Activities",
       "targetGraphs": [
         "net8.0-windows7.0",
@@ -28121,7 +28121,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: DRACOE.Logging.64 1.0.17 requires UiPath.UIAutomation.Activities (= 23.10.13) but version UiPath.UIAutomation.Activities 24.10.16 was resolved.",
+      "message": "Detected package version outside of dependency constraint: DRACOE.Logging.64 1.0.20 requires UiPath.UIAutomation.Activities (= 23.10.13) but version UiPath.UIAutomation.Activities 24.10.16 was resolved.",
       "libraryId": "UiPath.UIAutomation.Activities",
       "targetGraphs": [
         "net8.0-windows7.0",
