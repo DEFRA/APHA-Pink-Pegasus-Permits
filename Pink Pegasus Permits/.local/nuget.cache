@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Q4bTNCx1cD8ShJ0fSe1DwXhw0/stLzJkmU1szKR/pa577dnfz8WKilGNtjpLVWiMMNNM4sX5k2D3EFZYa3XlgQ==",
+  "dgSpecHash": "53M+qRF7omFR/K4gjZQ206Cf5Te3kBB0UwRw3pWb/bfQbCavkqtedlTz0e1Ca6wBwRdbNOQGZIhYkgTcH7gfpg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ma000091\\OneDrive - Defra\\Documents\\GitHub\\APHA-Pink-Pegasus-Permits\\Pink Pegasus Permits\\.local\\",
   "expectedPackageFiles": [
@@ -14,9 +14,11 @@
     "C:\\Users\\ma000091\\.nuget\\packages\\bouncycastle.cryptography\\2.4.0\\bouncycastle.cryptography.2.4.0.nupkg.sha512",
     "C:\\Users\\ma000091\\.nuget\\packages\\closedxml\\0.100.3\\closedxml.0.100.3.nupkg.sha512",
     "C:\\Users\\ma000091\\.nuget\\packages\\csvhelper\\16.0.0\\csvhelper.16.0.0.nupkg.sha512",
+    "C:\\Users\\ma000091\\.nuget\\packages\\diffmatchpatch\\1.0.3\\diffmatchpatch.1.0.3.nupkg.sha512",
     "C:\\Users\\ma000091\\.nuget\\packages\\documentformat.openxml\\2.16.0\\documentformat.openxml.2.16.0.nupkg.sha512",
-    "C:\\Users\\ma000091\\.nuget\\packages\\dracoe.logging.64\\1.0.17\\dracoe.logging.64.1.0.17.nupkg.sha512",
+    "C:\\Users\\ma000091\\.nuget\\packages\\dracoe.logging.64\\1.0.20\\dracoe.logging.64.1.0.20.nupkg.sha512",
     "C:\\Users\\ma000091\\.nuget\\packages\\dracoe.microsoft.graph.64\\1.0.54\\dracoe.microsoft.graph.64.1.0.54.nupkg.sha512",
+    "C:\\Users\\ma000091\\.nuget\\packages\\dracoe.orchestrator.jobs.64bit\\1.0.2\\dracoe.orchestrator.jobs.64bit.1.0.2.nupkg.sha512",
     "C:\\Users\\ma000091\\.nuget\\packages\\dracoe.popups.64\\1.0.9\\dracoe.popups.64.1.0.9.nupkg.sha512",
     "C:\\Users\\ma000091\\.nuget\\packages\\dynamicexpresso.core\\2.12.0\\dynamicexpresso.core.2.12.0.nupkg.sha512",
     "C:\\Users\\ma000091\\.nuget\\packages\\excelnumberformat\\1.1.0\\excelnumberformat.1.1.0.nupkg.sha512",
@@ -318,7 +320,7 @@
     "C:\\Users\\ma000091\\.nuget\\packages\\uipath.system.activities.runtime\\24.10.8\\uipath.system.activities.runtime.24.10.8.nupkg.sha512",
     "C:\\Users\\ma000091\\.nuget\\packages\\uipath.system.activities.runtime.windows\\24.10.8\\uipath.system.activities.runtime.windows.24.10.8.nupkg.sha512",
     "C:\\Users\\ma000091\\.nuget\\packages\\uipath.telemetry.client\\2.3.3\\uipath.telemetry.client.2.3.3.nupkg.sha512",
-    "C:\\Users\\ma000091\\.nuget\\packages\\uipath.testing.activities\\23.10.1\\uipath.testing.activities.23.10.1.nupkg.sha512",
+    "C:\\Users\\ma000091\\.nuget\\packages\\uipath.testing.activities\\24.10.4\\uipath.testing.activities.24.10.4.nupkg.sha512",
     "C:\\Users\\ma000091\\.nuget\\packages\\uipath.uiautomation.activities\\24.10.16\\uipath.uiautomation.activities.24.10.16.nupkg.sha512",
     "C:\\Users\\ma000091\\.nuget\\packages\\uipath.uiautomation.activities.design.recoverypanel\\24.10.16\\uipath.uiautomation.activities.design.recoverypanel.24.10.16.nupkg.sha512",
     "C:\\Users\\ma000091\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\24.10.16\\uipath.uiautomation.activities.runtime.24.10.16.nupkg.sha512",
@@ -335,7 +337,7 @@
       "level": "Warning",
       "warningLevel": 1,
       "filePath": "C:\\Users\\ma000091\\OneDrive - Defra\\Documents\\GitHub\\APHA-Pink-Pegasus-Permits\\Pink Pegasus Permits\\.local",
-      "message": "Detected package version outside of dependency constraint: DRACOE.Logging.64 1.0.17 requires UiPath.Excel.Activities (= 2.22.3) but version UiPath.Excel.Activities 2.23.5 was resolved.",
+      "message": "Detected package version outside of dependency constraint: DRACOE.Logging.64 1.0.20 requires UiPath.Excel.Activities (= 2.22.3) but version UiPath.Excel.Activities 2.23.5 was resolved.",
       "libraryId": "UiPath.Excel.Activities",
       "targetGraphs": [
         "net8.0-windows7.0",
@@ -347,7 +349,7 @@
       "level": "Warning",
       "warningLevel": 1,
       "filePath": "C:\\Users\\ma000091\\OneDrive - Defra\\Documents\\GitHub\\APHA-Pink-Pegasus-Permits\\Pink Pegasus Permits\\.local",
-      "message": "Detected package version outside of dependency constraint: DRACOE.Logging.64 1.0.17 requires UiPath.System.Activities (= 23.10.6) but version UiPath.System.Activities 24.10.8 was resolved.",
+      "message": "Detected package version outside of dependency constraint: DRACOE.Logging.64 1.0.20 requires UiPath.System.Activities (= 23.10.6) but version UiPath.System.Activities 24.10.8 was resolved.",
       "libraryId": "UiPath.System.Activities",
       "targetGraphs": [
         "net8.0-windows7.0",
@@ -359,7 +361,7 @@
       "level": "Warning",
       "warningLevel": 1,
       "filePath": "C:\\Users\\ma000091\\OneDrive - Defra\\Documents\\GitHub\\APHA-Pink-Pegasus-Permits\\Pink Pegasus Permits\\.local",
-      "message": "Detected package version outside of dependency constraint: DRACOE.Logging.64 1.0.17 requires UiPath.UIAutomation.Activities (= 23.10.13) but version UiPath.UIAutomation.Activities 24.10.16 was resolved.",
+      "message": "Detected package version outside of dependency constraint: DRACOE.Logging.64 1.0.20 requires UiPath.UIAutomation.Activities (= 23.10.13) but version UiPath.UIAutomation.Activities 24.10.16 was resolved.",
       "libraryId": "UiPath.UIAutomation.Activities",
       "targetGraphs": [
         "net8.0-windows7.0",
