@@ -29,5 +29,10 @@
   "UiPath.UIAutomationNext.Activities.VerifyExecution.VerifyTypedText": "False",
   "UiPath.UIAutomationNext.Activities.VerifyExecution.VerifyActivities": "False",
   "UiPath.UIAutomationNext.Activities.ApplicationCard.ResizeWindow": "None",
-  "UiPath.UIAutomationNext.Activities.Generic.EnableAutoAddToOR": "True"
+  "UiPath.UIAutomationNext.Activities.Generic.EnableAutoAddToOR": "True",
+  "UiPath.UIAutomationNext.Activities.SearchStepsWnd.FindSelectorType": "Auto",
+  "UiPath.UIAutomationNext.Activities.SearchStepsWeb.FindSelectorType": "Auto",
+  "UiPath.UIAutomationNext.Activities.SearchStepsSAP.FindSelectorType": "One",
+  "UiPath.UIAutomationNext.Activities.SearchStepsJava.FindSelectorType": "Auto",
+  "UiPath.UIAutomationNext.Activities.ApplicationCard.WindowAttachMode": "ByInstance"
 }

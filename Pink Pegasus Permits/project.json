@@ -13,14 +13,14 @@
     "UiPath.PDF.Activities": "[4.3.0]",
     "UiPath.System.Activities": "[24.10.8]",
     "UiPath.Testing.Activities": "[24.10.4]",
-    "UiPath.UIAutomation.Activities": "[24.10.16]",
+    "UiPath.UIAutomation.Activities": "[26.10.3]",
     "UiPath.WebAPI.Activities": "[2.4.0]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "24.10.15.0",
-  "projectVersion": "1.0.13",
+  "projectVersion": "1.0.19",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
