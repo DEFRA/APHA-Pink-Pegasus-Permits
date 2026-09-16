@@ -131,7 +131,7 @@
       <AssemblyReference>UiPath.PDF</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Read_Split_File" sap:VirtualizedContainerService.HintSize="880.8,508.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Read_Split_File" sap:VirtualizedContainerService.HintSize="880.8,762.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strText" />
       <Variable x:TypeArguments="x:String" Name="strReference" />
@@ -143,19 +143,71 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:GetRobotCredential TimeoutMS="{x:Null}" Username="{x:Null}" AssetName="OCR_API_Key" CacheStrategy="None" DisplayName="Get Credential" FolderPath="APHA Root/Pink Pegasus Permits" sap:VirtualizedContainerService.HintSize="416,176.4" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[pw]" />
-    <ui:ReadPDFWithOCR ResourceFile="{x:Null}" DegreeOfParallelism="-1" DisplayName="Read PDF With OCR" FileName="C:\Users\ma000091\Downloads\10_21 03 24.pdf" sap:VirtualizedContainerService.HintSize="416,194.8" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_1" ImageDpi="270" Range="All" Text="[strText]">
+    <ui:ReadPDFWithOCR ResourceFile="{x:Null}" DegreeOfParallelism="-1" DisplayName="Read PDF With OCR" FileName="C:\Users\ma000091\Downloads\06 06 24 A10s 2001.pdf" sap:VirtualizedContainerService.HintSize="416,262" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_5" ImageDpi="270" Range="1" Text="[strText]">
       <ui:ReadPDFWithOCR.Item>
-        <upap:ItemArgument x:TypeArguments="upr:IResource" ResourceFile="{x:Null}" FileName="C:\Users\ma000091\Downloads\10_21 03 24.pdf" />
+        <upap:ItemArgument x:TypeArguments="upr:IResource" ResourceFile="{x:Null}" FileName="C:\Users\ma000091\Downloads\06 06 24 A10s 2001.pdf" />
       </ui:ReadPDFWithOCR.Item>
       <ui:ReadPDFWithOCR.OCREngine>
         <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
           <ActivityFunc.Argument>
             <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
           </ActivityFunc.Argument>
-          <p:UiPathDocumentOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="[New System.Net.NetworkCredential(String.Empty, pw).Password]" ComputeSkewAngle="False" DisplayName="UiPath Document OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathDocumentOCR_4" Image="[Image]" Language="auto" NoopExecution="False" Profile="None" Scale="1" Timeout="100000" />
+          <p:UiPathDocumentOCR Endpoint="{x:Null}" ImageFile="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="[New System.Net.NetworkCredential(String.Empty, pw).Password]" ComputeSkewAngle="False" DisplayName="UiPath Document OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="UiPathDocumentOCR_4" Image="[Image]" Language="auto" NoopExecution="False" Profile="None" Scale="1" Timeout="100000" UseSeparateOcrProcess="True">
+            <p:UiPathDocumentOCR.Source>
+              <p:OcrImageInput ImageFile="{x:Null}" Image="[Image]" />
+            </p:UiPathDocumentOCR.Source>
+          </p:UiPathDocumentOCR>
         </ActivityFunc>
       </ui:ReadPDFWithOCR.OCREngine>
     </ui:ReadPDFWithOCR>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="416,114.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[strText.Substring(0,200)]" />
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,85.2" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ReadPDFWithOCR ResourceFile="{x:Null}" DegreeOfParallelism="-1" DisplayName="Read PDF With OCR" FileName="C:\Users\ma000091\OneDrive - Defra\CURRENT RESEARCH\OCR\16_30 08 23 2002.pdf" sap:VirtualizedContainerService.HintSize="382,186" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_3" ImageDpi="270" Range="All" Text="[strText]">
+            <ui:ReadPDFWithOCR.Item>
+              <upap:ItemArgument x:TypeArguments="upr:IResource" ResourceFile="{x:Null}" FileName="C:\Users\ma000091\OneDrive - Defra\CURRENT RESEARCH\OCR\16_30 08 23 2002.pdf" />
+            </ui:ReadPDFWithOCR.Item>
+            <ui:ReadPDFWithOCR.OCREngine>
+              <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                <ActivityFunc.Argument>
+                  <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                </ActivityFunc.Argument>
+                <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="334,24.8" sap2010:WorkflowViewState.IdRef="GoogleOCR_1" Image="[Image]" NoopExecution="False" />
+              </ActivityFunc>
+            </ui:ReadPDFWithOCR.OCREngine>
+          </ui:ReadPDFWithOCR>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="fileoutput2.txt" sap:VirtualizedContainerService.HintSize="416,167.6" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[strText]" />
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382,114.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[strText]" />
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
   </Sequence>
 </Activity>

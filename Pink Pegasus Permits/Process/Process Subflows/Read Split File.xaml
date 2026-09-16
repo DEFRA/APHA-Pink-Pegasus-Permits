@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Read_Split_File" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Read_Split_File_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upap="clr-namespace:UiPath.PDF.Activities.PDF;assembly=UiPath.PDF.Activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Read_Split_File" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Read_Split_File_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System.Text.RegularExpressions" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upap="clr-namespace:UiPath.PDF.Activities.PDF;assembly=UiPath.PDF.Activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -128,7 +128,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Read_Split_File" sap:VirtualizedContainerService.HintSize="880.8,2622" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Read_Split_File" sap:VirtualizedContainerService.HintSize="880.8,4509.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strText" />
       <Variable x:TypeArguments="x:String" Name="strReference" />
@@ -138,7 +138,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="502,114.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap:VirtualizedContainerService.HintSize="570,114.4" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Object">[g_Config("CurrentSplitFilePath")]</OutArgument>
       </Assign.To>
@@ -146,21 +146,21 @@
         <InArgument x:TypeArguments="x:Object">[Directory.GetFiles(g_Config("SplitFileFolder").ToString)(0)]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="502,175.6" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" />
-    <ui:ReadPDFText PreserveFormatting="{x:Null}" ResourceFile="{x:Null}" DisplayName="Read PDF Text" FileName="[g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" sap:VirtualizedContainerService.HintSize="502,124" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[strText]">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="570,175.6" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" />
+    <ui:ReadPDFText PreserveFormatting="{x:Null}" ResourceFile="{x:Null}" DisplayName="Read PDF Text" FileName="[g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" sap:VirtualizedContainerService.HintSize="570,124" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[strText]">
       <ui:ReadPDFText.Item>
         <upap:ItemArgument x:TypeArguments="upr:IResource" ResourceFile="{x:Null}" FileName="[g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" />
       </ui:ReadPDFText.Item>
     </ui:ReadPDFText>
-    <If Condition="[string.IsNullOrWhiteSpace(strText)]" DisplayName="If - ocr Document?" sap:VirtualizedContainerService.HintSize="502,507.6" sap2010:WorkflowViewState.IdRef="If_1">
+    <If Condition="[string.IsNullOrWhiteSpace(strText)]" DisplayName="If - ocr Document?" sap:VirtualizedContainerService.HintSize="570,574.8" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,313.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:ReadPDFWithOCR ResourceFile="{x:Null}" DegreeOfParallelism="-1" DisplayName="Read PDF With OCR" FileName="[g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" sap:VirtualizedContainerService.HintSize="382,186" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_1" ImageDpi="270" Range="All" Text="[strText]">
+          <ui:ReadPDFWithOCR ResourceFile="{x:Null}" DegreeOfParallelism="-1" DisplayName="Read PDF With OCR" FileName="[g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" sap:VirtualizedContainerService.HintSize="382,253.2" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_1" ImageDpi="270" Range="All" Text="[strText]">
             <ui:ReadPDFWithOCR.Item>
               <upap:ItemArgument x:TypeArguments="upr:IResource" ResourceFile="{x:Null}" FileName="[g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" />
             </ui:ReadPDFWithOCR.Item>
@@ -169,7 +169,11 @@
                 <ActivityFunc.Argument>
                   <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                 </ActivityFunc.Argument>
-                <p:UiPathDocumentOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="[New System.Net.NetworkCredential(String.Empty, g_credentials(&quot;OCR_API_Key&quot;).Password).Password]" ComputeSkewAngle="False" DisplayName="UiPath Document OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathDocumentOCR_4" Image="[Image]" Language="auto" NoopExecution="False" Profile="None" Scale="1" Timeout="100000" />
+                <p:UiPathDocumentOCR Endpoint="{x:Null}" ImageFile="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="[New System.Net.NetworkCredential(String.Empty, g_credentials(&quot;OCR_API_Key&quot;).Password).Password]" ComputeSkewAngle="False" DisplayName="UiPath Document OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="UiPathDocumentOCR_4" Image="[Image]" Language="auto" NoopExecution="False" Profile="None" Scale="1" Timeout="100000" UseSeparateOcrProcess="True">
+                  <p:UiPathDocumentOCR.Source>
+                    <p:OcrImageInput ImageFile="{x:Null}" Image="[Image]" />
+                  </p:UiPathDocumentOCR.Source>
+                </p:UiPathDocumentOCR>
               </ActivityFunc>
             </ui:ReadPDFWithOCR.OCREngine>
           </ui:ReadPDFWithOCR>
@@ -185,7 +189,7 @@
         </Sequence>
       </If.Else>
     </If>
-    <Assign sap:VirtualizedContainerService.HintSize="502,114.4" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <Assign sap:VirtualizedContainerService.HintSize="570,114.4" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Object">[g_Config("Reference")]</OutArgument>
       </Assign.To>
@@ -193,7 +197,7 @@
         <InArgument x:TypeArguments="x:Object">[Regex.Match(strText,"\b2\dGB(IMP|EXP|A10|REX|POC|MIC)[A-Z0-9]{6}\b").Value]</InArgument>
       </Assign.Value>
     </Assign>
-    <If Condition="[string.IsNullOrWhiteSpace(g_Config(&quot;Reference&quot;).ToString)]" DisplayName="If - reference not found." sap:VirtualizedContainerService.HintSize="502,541.6" sap2010:WorkflowViewState.IdRef="If_2">
+    <If Condition="[string.IsNullOrWhiteSpace(g_Config(&quot;Reference&quot;).ToString)]" DisplayName="If - reference not found." sap:VirtualizedContainerService.HintSize="570,541.6" sap2010:WorkflowViewState.IdRef="If_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -235,7 +239,7 @@
         </Sequence>
       </If.Else>
     </If>
-    <If Condition="[string.IsNullOrWhiteSpace(g_Config(&quot;Reference&quot;).ToString)]" DisplayName="If - reference not found." sap:VirtualizedContainerService.HintSize="502,541.6" sap2010:WorkflowViewState.IdRef="If_4">
+    <If Condition="[string.IsNullOrWhiteSpace(g_Config(&quot;Reference&quot;).ToString)]" DisplayName="If - reference not found." sap:VirtualizedContainerService.HintSize="570,541.6" sap2010:WorkflowViewState.IdRef="If_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -277,7 +281,112 @@
         </Sequence>
       </If.Else>
     </If>
-    <If Condition="[string.IsNullOrWhiteSpace(g_Config(&quot;Reference&quot;).ToString)]" DisplayName="If - reference not found." sap:VirtualizedContainerService.HintSize="502,479.6" sap2010:WorkflowViewState.IdRef="If_3">
+    <Assign DisplayName="Assign - Set value " sap:VirtualizedContainerService.HintSize="570,114.4" sap2010:WorkflowViewState.IdRef="Assign_8">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Object">[g_Config("2CHECK")]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Object">[False]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign DisplayName=" Assign init Date" sap:VirtualizedContainerService.HintSize="570,114.4" sap2010:WorkflowViewState.IdRef="Assign_12">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Object">[g_Config("2CHECK_DATE")]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Object">["New"]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <If Condition="[not(string.IsNullOrWhiteSpace(g_Config(&quot;Reference&quot;).ToString)) AndAlso Regex.IsMatch(g_Config(&quot;Reference&quot;).ToString.Substring(7), &quot;[O0I1]&quot;)]" DisplayName="If - reference not found." sap:VirtualizedContainerService.HintSize="570,1454.8" sap2010:WorkflowViewState.IdRef="If_5">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="536,1193.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="listMatches" />
+            <Variable x:TypeArguments="x:String" Name="strDate" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign DisplayName="Assign - Set value " sap:VirtualizedContainerService.HintSize="502,114.4" sap2010:WorkflowViewState.IdRef="Assign_7">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:Object">[g_Config("2CHECK")]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:Object">[True]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <ui:Matches FirstMatch="{x:Null}" DisplayName="Find Matching Patterns - find all dates" sap:VirtualizedContainerService.HintSize="502,92" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[strText]" IsBuilderTabModified="False" Pattern="\b[\dOI]{2}\/[\dOI]{2}\/[21I][0O9][\dOI]{2}\b" RegexOption="IgnoreCase, Compiled" Result="[listMatches]" />
+          <Assign sap2010:Annotation.AnnotationText="The last date on the document needs to be matched against pegasus ms dynamics column field&#xD;&#xA;&#xD;&#xA;confriemd with BA and business it will always be at the end of the document. it can be in different location so going through IDP wasnt considered worth the time investiment&#xD;&#xA;&#xD;&#xA;swapping O for 0 and I for 1 just in case there are OCR errors" DisplayName="Assign - get final date" sap:VirtualizedContainerService.HintSize="502,257.6" sap2010:WorkflowViewState.IdRef="Assign_10">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[strDate]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[listMatches.Last().Value.Replace("I", "1").Replace("O", "0")]</InArgument>
+            </Assign.Value>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Assign>
+          <If Condition="[DateTime.TryParse(strDate, New DateTime())]" DisplayName="If - check date can be converted" sap:VirtualizedContainerService.HintSize="502,669.2" sap2010:WorkflowViewState.IdRef="If_6">
+            <If.Then>
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,165.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Assign DisplayName=" Assign Save date" sap:VirtualizedContainerService.HintSize="434,105.6" sap2010:WorkflowViewState.IdRef="Assign_9">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Object">[g_Config("2CHECK_DATE")]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Object">[strDate]</InArgument>
+                  </Assign.Value>
+                </Assign>
+              </Sequence>
+            </If.Then>
+            <If.Else>
+              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,341.2" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:LogMessage DisplayName="Log Message - date error" sap:VirtualizedContainerService.HintSize="434,175.6" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Error" Message="[&quot;Unable to parse date: &quot; + strDate]" />
+                <Assign DisplayName=" Assign Save date" sap:VirtualizedContainerService.HintSize="434,105.6" sap2010:WorkflowViewState.IdRef="Assign_11">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Object">[g_Config("2CHECK_DATE")]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Object">["ERROR"]</InArgument>
+                  </Assign.Value>
+                </Assign>
+              </Sequence>
+            </If.Else>
+          </If>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,90.4" sap2010:WorkflowViewState.IdRef="Sequence_12">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </If.Else>
+    </If>
+    <If Condition="[string.IsNullOrWhiteSpace(g_Config(&quot;Reference&quot;).ToString)]" DisplayName="If - reference not found." sap:VirtualizedContainerService.HintSize="570,616" sap2010:WorkflowViewState.IdRef="If_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -295,12 +404,13 @@
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,90.4" sap2010:WorkflowViewState.IdRef="Sequence_8">
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,226.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message - log the read text" sap:VirtualizedContainerService.HintSize="382,166.8" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Reference found: &quot; +g_Config(&quot;Reference&quot;).ToString]" />
         </Sequence>
       </If.Else>
     </If>
