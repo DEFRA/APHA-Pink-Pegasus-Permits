@@ -43,6 +43,7 @@
       <x:String>System.Net</x:String>
       <x:String>System.Management.Automation</x:String>
       <x:String>System.Security</x:String>
+      <x:String>System.Globalization</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -329,7 +330,7 @@
               <OutArgument x:TypeArguments="x:String">[strDate]</OutArgument>
             </Assign.To>
             <Assign.Value>
-              <InArgument x:TypeArguments="x:String">[listMatches.Last().Value.Replace("I", "1").Replace("O", "0")]</InArgument>
+              <InArgument x:TypeArguments="x:String">[listMatches.Last().Value.Replace("I", "1").Replace("O", "0").Trim]</InArgument>
             </Assign.Value>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -337,7 +338,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </Assign>
-          <If Condition="[DateTime.TryParse(strDate, New DateTime())]" DisplayName="If - check date can be converted" sap:VirtualizedContainerService.HintSize="502,669.2" sap2010:WorkflowViewState.IdRef="If_6">
+          <If Condition="[DateTime.TryParseExact(strDate, &quot;dd/MM/yyyy&quot;, Globalization.CultureInfo.GetCultureInfo(&quot;en-GB&quot;), Globalization.DateTimeStyles.None, Nothing)]" DisplayName="If - check date can be converted" sap:VirtualizedContainerService.HintSize="502,669.2" sap2010:WorkflowViewState.IdRef="If_6">
             <If.Then>
               <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,165.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
                 <sap:WorkflowViewStateService.ViewState>
