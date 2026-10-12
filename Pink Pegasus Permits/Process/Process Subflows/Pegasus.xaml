@@ -111,19 +111,19 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Pegasus" sap:VirtualizedContainerService.HintSize="880.8,1709.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Pegasus" sap:VirtualizedContainerService.HintSize="880.8,2300.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Edge Permits All Permits - Dynamics 365(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="526,1686" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[g_elePegasus]" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[g_elePegasus]" ScopeGuid="06aaca5f-5afe-4168-8856-e53b5c36195c" Version="V2">
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Edge Permits All Permits - Dynamics 365(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="552,2277.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[g_elePegasus]" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[g_elePegasus]" ScopeGuid="06aaca5f-5afe-4168-8856-e53b5c36195c" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="492,1494.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="518,2139.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="strSearchResult" />
             </Sequence.Variables>
@@ -132,7 +132,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState DisplayName="Check App State 'Pick an account'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="458,85.2" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="06aaca5f-5afe-4168-8856-e53b5c36195c" Version="V4">
+            <uix:NCheckState DisplayName="Check App State 'Pick an account'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="484,56.8" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="06aaca5f-5afe-4168-8856-e53b5c36195c" Version="V4">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,241.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
@@ -166,7 +166,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <uix:NCheckState DisplayName="Check App State 'Enter password'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="458,85.2" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="06aaca5f-5afe-4168-8856-e53b5c36195c" Version="V4">
+            <uix:NCheckState DisplayName="Check App State 'Enter password'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="484,706" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="06aaca5f-5afe-4168-8856-e53b5c36195c" Version="V4">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,241.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
@@ -174,7 +174,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign in'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,181.2" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06aaca5f-5afe-4168-8856-e53b5c36195c" Version="V4">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'Sign in'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,181.2" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06aaca5f-5afe-4168-8856-e53b5c36195c" Version="V4">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="login.microsoftonline.com/bce3d7d1-cbbd-481e-8c81-eaecfc38b551/reprocess" CVScreenId="9cc0cb18-1eaa-4b79-9f39-d414c6a1fd9d" ContentHash="vNwyrYg6X02HbF92JYxuAQ" DesignTimeRectangle="2017, 1399, 189, 56" DesignTimeScaleFactor="1.75" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Sign in' type='submit' /&gt;" Guid="9121a819-e246-45c4-82b1-6bb920d7ace7" InformativeScreenshot="ac42a09e18937089d23e197c01da1d4e.png" Reference="u70FNKxx7EOHPBwkfez66Q/IGZ7jyhwgUKbvGvoAdMKiw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Sign in to your account' /&gt;" SearchSteps="Selector" Version="V4" />
                     </uix:NClick.Target>
@@ -195,12 +195,12 @@
               </uix:NCheckState.Target>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'Edit filters'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="458,190" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06aaca5f-5afe-4168-8856-e53b5c36195c" Version="V4">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0" DisplayName="Click 'Edit filters'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,190" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06aaca5f-5afe-4168-8856-e53b5c36195c" Version="V4">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="defra-apha-cites-pre.crm4.dynamics.com/main.aspx" CVScreenId="197734be-004c-49e5-9038-b0bc18827641" ContentHash="OmKG0NyUCkKlsrFrpoAs7Q" CvElementArea="3170, 594, 454, 86" CvType="InputBox" DesignTimeRectangle="3266, 603, 356, 71" DesignTimeScaleFactor="2.5" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='quickFind_text_*' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='quickFind_text_0' tag='INPUT' type='' class='ms-SearchBox-field field-137' placeholder='Filter by keyword' aaname='' /&gt;" Guid="8e90d8e5-7acd-4a16-9d63-fd90fa2b5132" InformativeScreenshot="ddf56115c061d125844e8906082a1c4c.png" IsResponsive="True" Reference="u70FNKxx7EOHPBwkfez66Q/tPjkIt6aqEqdp_jMZjDPfw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Dynamics 365' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -217,8 +217,8 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <ui:SetToClipboard DisplayName="Set To Clipboard - reference" sap:VirtualizedContainerService.HintSize="458,92" sap2010:WorkflowViewState.IdRef="SetToClipboard_1" Text="[g_Config(&quot;Reference&quot;).ToString]" />
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayBefore="0" DelayBetweenKeys="0" DisplayName="Type Into 'paste in filters'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="458,242.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="06aaca5f-5afe-4168-8856-e53b5c36195c" Text="%[d(Ctrl)]v[u(Ctrl)][k(Enter)]" Version="V4">
+            <ui:SetToClipboard DisplayName="Set To Clipboard - reference" sap:VirtualizedContainerService.HintSize="484,92" sap2010:WorkflowViewState.IdRef="SetToClipboard_1" Text="[g_Config(&quot;Reference&quot;).ToString]" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayBefore="0" DelayBetweenKeys="0" DisplayName="Type Into 'paste in filters'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,294.8" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="06aaca5f-5afe-4168-8856-e53b5c36195c" Text="%[d(Ctrl)]v[u(Ctrl)][k(Enter)]" Version="V4">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="defra-apha-cites-pre.crm4.dynamics.com/main.aspx" CVScreenId="140cd505-a275-4487-ac36-762ba1f43322" ContentHash="Mzo_8XfCFkCXGeIwc_hSvw" CvElementArea="2524, 579, 450, 82" CvType="InputBox" DesignTimeRectangle="2546, 587, 426, 71" DesignTimeScaleFactor="2.5" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='quickFind_text_*' tag='INPUT' aria-role='searchbox' /&gt;" FuzzySelectorArgument="&lt;webctrl id='quickFind_text_*' tag='INPUT' aria-role='searchbox' type='' class='ms-SearchBox-field field-157' placeholder='Filter by keyword' aaname='' /&gt;" Guid="181238e8-4fb3-4ca7-a362-25ec184e7fd3" InformativeScreenshot="1c29c7f61d0859a1f0ba7cda5c9ca533.png" IsResponsive="True" Reference="u70FNKxx7EOHPBwkfez66Q/qSrk0i1YgEqa26gSyAbkYQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Permits Pink Robots View 1 - Dynamics 365' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4">
                   <uix:TargetAnchorable.Anchors>
@@ -228,8 +228,15 @@
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions ExpectedText="[g_Config(&quot;Reference&quot;).ToString]" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element - wait for label to reappear" sap:VirtualizedContainerService.HintSize="458,118.8" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
+            <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element - wait for label to reappear" sap:VirtualizedContainerService.HintSize="484,118.8" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
               <ui:WaitUiElementAppear.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b0bbb12d-224c-47e9-b592-ce63edc16f8f" Selector="&lt;webctrl class='statusTextContainer*' tag='SPAN' type='' /&gt;" WaitForReady="COMPLETE">
                   <ui:Target.TimeoutMS>
@@ -238,7 +245,7 @@
                 </ui:Target>
               </ui:WaitUiElementAppear.Target>
             </ui:WaitUiElementAppear>
-            <ui:RetryScope DisplayName="Retry Scope - read rows returned" sap:VirtualizedContainerService.HintSize="458,515.2" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3" RetryInterval="00:00:05">
+            <ui:RetryScope DisplayName="Retry Scope - read rows returned" sap:VirtualizedContainerService.HintSize="484,515.2" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3" RetryInterval="00:00:05">
               <ui:RetryScope.ActivityBody>
                 <ActivityAction>
                   <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="Sequence_3">
@@ -261,7 +268,7 @@
                 </ActivityFunc>
               </ui:RetryScope.Condition>
             </ui:RetryScope>
-            <Assign DisplayName="Assign - format search result" sap:VirtualizedContainerService.HintSize="458,105.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign DisplayName="Assign - format search result" sap:VirtualizedContainerService.HintSize="484,105.6" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Object">[g_Config("SearchResult")]</OutArgument>
               </Assign.To>
