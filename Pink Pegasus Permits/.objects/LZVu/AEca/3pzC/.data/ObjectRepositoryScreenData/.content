@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryScreenData ContentHash="TBbGnqIDlkKoN0OVbYCAgw" Reference="u70FNKxx7EOHPBwkfez66Q/3pzCnkv0YU-g7ZVwQM0Mcg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryScreenData ContentHash="L96v1m2JoEG_E5PBiv4cYQ" Reference="u70FNKxx7EOHPBwkfez66Q/3pzCnkv0YU-g7ZVwQM0Mcg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryScreenData.Data>
-    <TargetApp x:Key="TargetApp" Area="-16, -16, 3872, 2312" BrowserType="Edge" ContentHash="qes075R3dE6U-8J_N5bsfw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABiSURBVDhP7cyxDYBADENRT8JIrMQytwQsRUmZM5bcOdU1FFj6VfSCZ9+qC9xxobre+//gEw/WN+5q4+pEdclH6LgEnXyEjkvQyUfouASdfISOS9DJR+i4BJ18hI5L0MmvDZhNnuSD8tzgJQAAAABJRU5ErkJggg==" Reference="u70FNKxx7EOHPBwkfez66Q/3pzCnkv0YU-g7ZVwQM0Mcg" Selector="&lt;html app='msedge.exe' title='*Dynamics 365' /&gt;" Title="Permits All Permits - Dynamics 365" Url="[g_Config(&quot;PegasusURL&quot;).ToString]" Version="V1">
-      <imageRef attrName="InformativeScreenshot" originalValue="d87a5599a070fd14c9fce00389e6b7fe.jpg" xmlns="">0y6UPjQLzXUepb5J9vdJkkQ</imageRef>
+    <TargetApp x:Key="TargetApp" Area="-16, -16, 3872, 2312" BrowserType="Edge" ContentHash="msAHCoysCUuUJgfk1AsKjg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABiSURBVDhP7cyxDYBADENRT8JIrMQytwQsRUmZM5bcOdU1FFj6VfSCZ9+qC9xxobre+//gEw/WN+5q4+pEdclH6LgEnXyEjkvQyUfouASdfISOS9DJR+i4BJ18hI5L0MmvDZhNnuSD8tzgJQAAAABJRU5ErkJggg==" Reference="u70FNKxx7EOHPBwkfez66Q/3pzCnkv0YU-g7ZVwQM0Mcg" Selector="&lt;html app='msedge.exe' title='*Dynamics 365' /&gt;" Url="https://defra-apha-cites-pre.crm4.dynamics.com/main.aspx?appid=dae1e2bb-a2f5-ed11-8849-000d3ab6d6a9&amp;pagetype=entitylist&amp;etn=cites_permit&amp;viewid=7cfb33fb-5675-f111-ab0d-7c1e5235daaf&amp;viewType=4230" Version="V1">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <TargetApp.WorkingDirectory>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.WorkingDirectory>
+      <imageRef attrName="InformativeScreenshot" originalValue="d87a5599a070fd14c9fce00389e6b7fe.jpg" xmlns="">0vBhvfLpgM06XfOR88iWOUw</imageRef>
     </TargetApp>
   </ObjectRepositoryScreenData.Data>
 </ObjectRepositoryScreenData>
