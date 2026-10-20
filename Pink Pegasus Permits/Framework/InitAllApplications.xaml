@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Initialize_Applications" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="834,698" sap2010:WorkflowViewState.IdRef="Initialization_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Initialize_Applications" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="834,698" sap2010:WorkflowViewState.IdRef="Initialization_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities.XamlIntegration</x:String>
@@ -108,7 +108,7 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="902,658.84" sap2010:WorkflowViewState.IdRef="Sequence_9">
+  <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="880.8,527.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -116,13 +116,13 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="450,175.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Opening applications...&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge Permits All Permits - Dynamics 365" sap:VirtualizedContainerService.HintSize="450,373.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" OutUiElement="[g_elePegasus]" ScopeGuid="1b23b13b-4861-482d-a5d3-682bf5ae4d3c" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge Permits All Permits - Dynamics 365" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="450,297.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" OutUiElement="[g_elePegasus]" ScopeGuid="1b23b13b-4861-482d-a5d3-682bf5ae4d3c" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,90.4" sap2010:WorkflowViewState.IdRef="Sequence_10">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="strDropdown" />
             </Sequence.Variables>
@@ -134,8 +134,22 @@
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="-16, -16, 3872, 2312" BrowserType="Edge" ContentHash="TBbGnqIDlkKoN0OVbYCAgw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABiSURBVDhP7cyxDYBADENRT8JIrMQytwQsRUmZM5bcOdU1FFj6VfSCZ9+qC9xxobre+//gEw/WN+5q4+pEdclH6LgEnXyEjkvQyUfouASdfISOS9DJR+i4BJ18hI5L0MmvDZhNnuSD8tzgJQAAAABJRU5ErkJggg==" InformativeScreenshot="d87a5599a070fd14c9fce00389e6b7fe.jpg" Reference="u70FNKxx7EOHPBwkfez66Q/3pzCnkv0YU-g7ZVwQM0Mcg" Selector="&lt;html app='msedge.exe' title='*Dynamics 365' /&gt;" Title="Permits All Permits - Dynamics 365" Url="[g_Config(&quot;PegasusURL&quot;).ToString]" Version="V1" />
+        <uix:TargetApp Area="-16, -16, 3872, 2312" BrowserType="Edge" ContentHash="lTReanZtJkmrqOM1H0O05g" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABiSURBVDhP7cyxDYBADENRT8JIrMQytwQsRUmZM5bcOdU1FFj6VfSCZ9+qC9xxobre+//gEw/WN+5q4+pEdclH6LgEnXyEjkvQyUfouASdfISOS9DJR+i4BJ18hI5L0MmvDZhNnuSD8tzgJQAAAABJRU5ErkJggg==" InformativeScreenshot="d87a5599a070fd14c9fce00389e6b7fe.jpg" Reference="u70FNKxx7EOHPBwkfez66Q/3pzCnkv0YU-g7ZVwQM0Mcg" Selector="&lt;html app='msedge.exe' title='*Dynamics 365' /&gt;" Url="[g_Config(&quot;PegasusURL&quot;).ToString]" Version="V1">
+          <uix:TargetApp.Arguments>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.Arguments>
+          <uix:TargetApp.WorkingDirectory>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.WorkingDirectory>
+        </uix:TargetApp>
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
   </Sequence>
