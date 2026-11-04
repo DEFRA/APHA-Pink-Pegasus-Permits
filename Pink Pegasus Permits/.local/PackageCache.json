@@ -1006,7 +1006,7 @@
     {
       "Package": {
         "Id": "DRACOE.Orchestrator.Jobs.64bit",
-        "Version": "1.0.5"
+        "Version": "1.0.6"
       },
       "Assemblies": [
         "C:\\Users\\ma000091\\.nuget\\packages\\automapper\\9.0.0\\lib/netstandard2.0/AutoMapper.dll",
@@ -1014,9 +1014,9 @@
         "C:\\Users\\ma000091\\.nuget\\packages\\bitmiracle.docotic.pdf\\9.8.19642-dev\\lib/netstandard2.0/BitMiracle.Docotic.Pdf.dll",
         "C:\\Users\\ma000091\\.nuget\\packages\\csvhelper\\16.0.0\\lib/netstandard2.1/CsvHelper.dll",
         "C:\\Users\\ma000091\\.nuget\\packages\\diffmatchpatch\\1.0.3\\lib/netstandard2.0/DiffMatchPatch.dll",
-        "C:\\Users\\ma000091\\.nuget\\packages\\dracoe.orchestrator.jobs.64bit\\1.0.5\\lib/net8.0-windows7.0/DRACOE Orchestrator Jobs 64bit.Core.dll",
-        "C:\\Users\\ma000091\\.nuget\\packages\\dracoe.orchestrator.jobs.64bit\\1.0.5\\lib/net8.0-windows7.0/DRACOE Orchestrator Jobs 64bit.dll",
-        "C:\\Users\\ma000091\\.nuget\\packages\\dracoe.orchestrator.jobs.64bit\\1.0.5\\lib/net8.0-windows7.0/DRACOE Orchestrator Jobs 64bit_Expressions.dll",
+        "C:\\Users\\ma000091\\.nuget\\packages\\dracoe.orchestrator.jobs.64bit\\1.0.6\\lib/net8.0-windows7.0/DRACOE Orchestrator Jobs 64bit.Core.dll",
+        "C:\\Users\\ma000091\\.nuget\\packages\\dracoe.orchestrator.jobs.64bit\\1.0.6\\lib/net8.0-windows7.0/DRACOE Orchestrator Jobs 64bit.dll",
+        "C:\\Users\\ma000091\\.nuget\\packages\\dracoe.orchestrator.jobs.64bit\\1.0.6\\lib/net8.0-windows7.0/DRACOE Orchestrator Jobs 64bit_Expressions.dll",
         "C:\\Users\\ma000091\\.nuget\\packages\\dynamicexpresso.core\\2.12.0\\lib/netstandard2.0/DynamicExpresso.Core.dll",
         "C:\\Users\\ma000091\\.nuget\\packages\\markdig.signed\\0.31.0\\lib/net6.0/Markdig.Signed.dll",
         "C:\\Users\\ma000091\\.nuget\\packages\\microsoft.applicationinsights\\2.21.0\\lib/netstandard2.0/Microsoft.ApplicationInsights.dll",
@@ -1172,7 +1172,7 @@
         "C:\\Users\\ma000091\\.nuget\\packages\\uipath.webapi.activities.runtime\\2.4.0\\lib/net6.0-windows7.0/UiPath.Web.Activities.dll",
         "C:\\Users\\ma000091\\.nuget\\packages\\uipath.webapi.activities.runtime\\2.4.0\\lib/net6.0-windows7.0/UiPath.Web.dll"
       ],
-      "Path": "C:\\Users\\ma000091\\.nuget\\packages\\dracoe.orchestrator.jobs.64bit\\1.0.5"
+      "Path": "C:\\Users\\ma000091\\.nuget\\packages\\dracoe.orchestrator.jobs.64bit\\1.0.6"
     }
   ],
   "Conflicts": [],
@@ -1414,7 +1414,7 @@
     },
     "DRACOE.Orchestrator.Jobs.64bit": {
       "Id": "DRACOE.Orchestrator.Jobs.64bit",
-      "Version": "1.0.5",
+      "Version": "1.0.6",
       "Dependencies": [
         {
           "Item1": "UiPath.System.Activities",
@@ -7088,14 +7088,14 @@
     {
       "Package": {
         "Id": "DRACOE.Orchestrator.Jobs.64bit",
-        "Version": "1.0.5"
+        "Version": "1.0.6"
       },
       "Assemblies": [
-        "C:\\Users\\ma000091\\.nuget\\packages\\dracoe.orchestrator.jobs.64bit\\1.0.5\\lib\\net8.0-windows7.0\\DRACOE Orchestrator Jobs 64bit.Core.dll",
-        "C:\\Users\\ma000091\\.nuget\\packages\\dracoe.orchestrator.jobs.64bit\\1.0.5\\lib\\net8.0-windows7.0\\DRACOE Orchestrator Jobs 64bit.dll",
-        "C:\\Users\\ma000091\\.nuget\\packages\\dracoe.orchestrator.jobs.64bit\\1.0.5\\lib\\net8.0-windows7.0\\DRACOE Orchestrator Jobs 64bit_Expressions.dll"
+        "C:\\Users\\ma000091\\.nuget\\packages\\dracoe.orchestrator.jobs.64bit\\1.0.6\\lib\\net8.0-windows7.0\\DRACOE Orchestrator Jobs 64bit.Core.dll",
+        "C:\\Users\\ma000091\\.nuget\\packages\\dracoe.orchestrator.jobs.64bit\\1.0.6\\lib\\net8.0-windows7.0\\DRACOE Orchestrator Jobs 64bit.dll",
+        "C:\\Users\\ma000091\\.nuget\\packages\\dracoe.orchestrator.jobs.64bit\\1.0.6\\lib\\net8.0-windows7.0\\DRACOE Orchestrator Jobs 64bit_Expressions.dll"
       ],
-      "Path": "C:\\Users\\ma000091\\.nuget\\packages\\dracoe.orchestrator.jobs.64bit\\1.0.5"
+      "Path": "C:\\Users\\ma000091\\.nuget\\packages\\dracoe.orchestrator.jobs.64bit\\1.0.6"
     },
     {
       "Package": {
