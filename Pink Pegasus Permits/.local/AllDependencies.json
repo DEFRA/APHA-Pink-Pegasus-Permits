@@ -293,7 +293,7 @@
           }
         }
       },
-      "DRACOE.Orchestrator.Jobs.64bit/1.0.5": {
+      "DRACOE.Orchestrator.Jobs.64bit/1.0.6": {
         "type": "package",
         "dependencies": {
           "UiPath.System.Activities": "24.10.4",
@@ -7673,7 +7673,7 @@
           }
         }
       },
-      "DRACOE.Orchestrator.Jobs.64bit/1.0.5": {
+      "DRACOE.Orchestrator.Jobs.64bit/1.0.6": {
         "type": "package",
         "dependencies": {
           "UiPath.System.Activities": "24.10.4",
@@ -15001,10 +15001,10 @@
         "lib/net8.0-windows7.0/DRACOE Microsoft Graph 64_Expressions_8885804.dll"
       ]
     },
-    "DRACOE.Orchestrator.Jobs.64bit/1.0.5": {
-      "sha512": "/tmeH9hTqe2z8bXaYlSDeafVnp+8hwEzRKnCYsbrPjsTjkdr7jphjQW1+LUIteP4GIXdxT7cfp8w/eLvUvBgxg==",
+    "DRACOE.Orchestrator.Jobs.64bit/1.0.6": {
+      "sha512": "S8wl/RSmgFe5O3agcCGtIeEmSsnjw36I8NWjOlS/KafZZD2+ElUSyIHmIE415j95NIG9MvWpiQoNthZ90oo4GA==",
       "type": "package",
-      "path": "dracoe.orchestrator.jobs.64bit/1.0.5",
+      "path": "dracoe.orchestrator.jobs.64bit/1.0.6",
       "files": [
         ".nupkg.metadata",
         "content/.project/PackageBindingsMetadata.json",
@@ -15030,7 +15030,7 @@
         "content/project.uiproj",
         "contentFiles/any/any/.objects/.metadata",
         "contentFiles/any/any/.objects/.type",
-        "dracoe.orchestrator.jobs.64bit.1.0.5.nupkg.sha512",
+        "dracoe.orchestrator.jobs.64bit.1.0.6.nupkg.sha512",
         "dracoe.orchestrator.jobs.64bit.nuspec",
         "lib/net8.0-windows7.0/DRACOE Orchestrator Jobs 64bit.Core.dll",
         "lib/net8.0-windows7.0/DRACOE Orchestrator Jobs 64bit.Core.xml",
@@ -28650,7 +28650,7 @@
     "net8.0-windows7.0": [
       "DRACOE.Logging.64 >= 1.0.20 <= 1.0.20",
       "DRACOE.Microsoft.Graph.64 >= 1.0.54 <= 1.0.54",
-      "DRACOE.Orchestrator.Jobs.64bit >= 1.0.5 <= 1.0.5",
+      "DRACOE.Orchestrator.Jobs.64bit >= 1.0.6 <= 1.0.6",
       "DRACOE.PopUps.64 >= 1.0.9 <= 1.0.9",
       "UiPath.Excel.Activities >= 2.23.5 <= 2.23.5",
       "UiPath.Mail.Activities >= 1.23.11 <= 1.23.11",
@@ -28688,7 +28688,7 @@
           "DRACOE.Orchestrator.Jobs.64bit": {
             "include": "Runtime",
             "target": "Package",
-            "version": "[1.0.5, 1.0.5]"
+            "version": "[1.0.6, 1.0.6]"
           },
           "DRACOE.PopUps.64": {
             "include": "Runtime",
