@@ -6,7 +6,7 @@
   "dependencies": {
     "DRACOE.Logging.64": "[1.0.20]",
     "DRACOE.Microsoft.Graph.64": "[1.0.54]",
-    "DRACOE.Orchestrator.Jobs.64bit": "[1.0.4]",
+    "DRACOE.Orchestrator.Jobs.64bit": "[1.0.7]",
     "DRACOE.PopUps.64": "[1.0.9]",
     "UiPath.Excel.Activities": "[2.23.5]",
     "UiPath.Mail.Activities": "[1.23.11]",
@@ -20,7 +20,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "24.10.15.0",
-  "projectVersion": "1.0.30",
+  "projectVersion": "1.0.33",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
