@@ -165,6 +165,7 @@
       <AssemblyReference>DRACOE.Logging.64</AssemblyReference>
       <AssemblyReference>System.Private.Xml</AssemblyReference>
       <AssemblyReference>UiPath.Database</AssemblyReference>
+      <AssemblyReference>CB0C3F5E4CC_v1_sub_c.rRwRW4ZpQ6C1YugN63Q32A</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Flowchart sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " sap:VirtualizedContainerService.HintSize="898,658.84" sap2010:WorkflowViewState.IdRef="Flowchart_1">
@@ -281,10 +282,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <FlowDecision.True>
-                    <FlowDecision x:Name="__ReferenceID3" DisplayName="blank Reference?" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_13">
-                      <FlowDecision.Condition>
-                        <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="string.IsNullOrWhiteSpace(g_Config(&quot;Reference&quot;).ToString)" />
-                      </FlowDecision.Condition>
+                    <FlowDecision x:Name="__ReferenceID3" Condition="[string.IsNullOrWhiteSpace(g_Config(&quot;Reference&quot;).ToString)]" DisplayName="blank Reference?" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_13">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -466,12 +464,7 @@
                                                                 <InArgument x:TypeArguments="sd:Stopwatch">[swMiniLoop]</InArgument>
                                                               </InvokeMethod.TargetObject>
                                                             </InvokeMethod>
-                                                            <d1:LogTransaction sap:VirtualizedContainerService.HintSize="416,48" IN_boolUnattended="[cbool(g_Config(&quot;Unattended&quot;))]" IN_dateEndDateTime="[Now]" IN_dateStartDateTime="[dateMiniCaseStartTime]" IN_intExitPoint="-1" IN_strFileName="[g_Config(&quot;SQLTransactionLogFilepath&quot;).ToString]" IN_strOutcome="Success" IN_strTotalTime="[(Math.Round(swMiniLoop.Elapsed.TotalSeconds, 2)).ToString]" IN_strTransactionID="[path.GetFileNameWithoutExtension(g_Config(&quot;CurrentSplitFilePath&quot;).ToString)]" IN_strUser="[g_Config(&quot;Username&quot;).ToString]" IN_strVersion="[g_Config(&quot;WorkPackageVersion&quot;).ToString]" IN_strWorkPackage="[g_Config(&quot;WorkPackageID&quot;).ToString]" sap2010:WorkflowViewState.IdRef="LogTransaction_1">
-                                                              <d1:LogTransaction.IN_strMiscNotes>
-                                                                <InArgument x:TypeArguments="x:String">
-                                                                  <Literal x:TypeArguments="x:String" DisplayName="Literal&lt;String&gt;" Value="" />
-                                                                </InArgument>
-                                                              </d1:LogTransaction.IN_strMiscNotes>
+                                                            <d1:LogTransaction sap:VirtualizedContainerService.HintSize="416,48" IN_boolUnattended="[cbool(g_Config(&quot;Unattended&quot;))]" IN_dateEndDateTime="[Now]" IN_dateStartDateTime="[dateMiniCaseStartTime]" IN_intExitPoint="-1" IN_strFileName="[g_Config(&quot;SQLTransactionLogFilepath&quot;).ToString]" IN_strMiscNotes="[if(booAI_used,&quot;AI Success&quot;,&quot;&quot;)]" IN_strOutcome="Success" IN_strTotalTime="[(Math.Round(swMiniLoop.Elapsed.TotalSeconds, 2)).ToString]" IN_strTransactionID="[path.GetFileNameWithoutExtension(g_Config(&quot;CurrentSplitFilePath&quot;).ToString)]" IN_strUser="[g_Config(&quot;Username&quot;).ToString]" IN_strVersion="[g_Config(&quot;WorkPackageVersion&quot;).ToString]" IN_strWorkPackage="[g_Config(&quot;WorkPackageID&quot;).ToString]" sap2010:WorkflowViewState.IdRef="LogTransaction_1">
                                                               <d1:LogTransaction.IN_strOutcomeNotes>
                                                                 <InArgument x:TypeArguments="x:String">
                                                                   <Literal x:TypeArguments="x:String" DisplayName="Literal&lt;String&gt;" Value="" />
@@ -720,13 +713,7 @@
                                                         <InArgument x:TypeArguments="sd:Stopwatch">[swMiniLoop]</InArgument>
                                                       </InvokeMethod.TargetObject>
                                                     </InvokeMethod>
-                                                    <d1:LogTransaction sap:VirtualizedContainerService.HintSize="416,48" IN_boolUnattended="[cbool(g_Config(&quot;Unattended&quot;))]" IN_dateEndDateTime="[Now]" IN_dateStartDateTime="[dateMiniCaseStartTime]" IN_intExitPoint="-1" IN_strFileName="[g_Config(&quot;SQLTransactionLogFilepath&quot;).ToString]" IN_strOutcome="Business Exception" IN_strOutcomeNotes="[strbiz]" IN_strTotalTime="[(Math.Round(swMiniLoop.Elapsed.TotalSeconds, 2)).ToString]" IN_strTransactionID="[path.GetFileNameWithoutExtension(g_Config(&quot;CurrentSplitFilePath&quot;).ToString)]" IN_strUser="[g_Config(&quot;Username&quot;).ToString]" IN_strVersion="[g_Config(&quot;WorkPackageVersion&quot;).ToString]" IN_strWorkPackage="[g_Config(&quot;WorkPackageID&quot;).ToString]" sap2010:WorkflowViewState.IdRef="LogTransaction_2">
-                                                      <d1:LogTransaction.IN_strMiscNotes>
-                                                        <InArgument x:TypeArguments="x:String">
-                                                          <Literal x:TypeArguments="x:String" DisplayName="Literal&lt;String&gt;" Value="" />
-                                                        </InArgument>
-                                                      </d1:LogTransaction.IN_strMiscNotes>
-                                                    </d1:LogTransaction>
+                                                    <d1:LogTransaction sap:VirtualizedContainerService.HintSize="416,48" IN_boolUnattended="[cbool(g_Config(&quot;Unattended&quot;))]" IN_dateEndDateTime="[Now]" IN_dateStartDateTime="[dateMiniCaseStartTime]" IN_intExitPoint="-1" IN_strFileName="[g_Config(&quot;SQLTransactionLogFilepath&quot;).ToString]" IN_strMiscNotes="[if(booAI_used,&quot;AI Fail&quot;,&quot;&quot;)]" IN_strOutcome="Business Exception" IN_strOutcomeNotes="[strbiz]" IN_strTotalTime="[(Math.Round(swMiniLoop.Elapsed.TotalSeconds, 2)).ToString]" IN_strTransactionID="[path.GetFileNameWithoutExtension(g_Config(&quot;CurrentSplitFilePath&quot;).ToString)]" IN_strUser="[g_Config(&quot;Username&quot;).ToString]" IN_strVersion="[g_Config(&quot;WorkPackageVersion&quot;).ToString]" IN_strWorkPackage="[g_Config(&quot;WorkPackageID&quot;).ToString]" sap2010:WorkflowViewState.IdRef="LogTransaction_2" />
                                                   </Sequence>
                                                   <FlowStep.Next>
                                                     <x:Reference>__ReferenceID2</x:Reference>
@@ -744,7 +731,7 @@
                               <FlowDecision.False>
                                 <FlowDecision x:Name="__ReferenceID29" DisplayName="backup ai" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_11">
                                   <FlowDecision.Condition>
-                                    <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="booAI_used" />
+                                    <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="not(booAI_used)" />
                                   </FlowDecision.Condition>
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -770,6 +757,19 @@
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
+                                        <Assign DisplayName="Assign - set booAI_used" sap:VirtualizedContainerService.HintSize="434,114.4" sap2010:WorkflowViewState.IdRef="Assign_14">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:Boolean">[booAI_used]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ai reference extraction - Invoke Workflow File (Process\Process Subflows\ai reference extraction.xaml)" sap:VirtualizedContainerService.HintSize="434,168.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Process\Process Subflows\ai reference extraction.xaml">
+                                          <ui:InvokeWorkflowFile.Arguments>
+                                            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                          </ui:InvokeWorkflowFile.Arguments>
+                                        </ui:InvokeWorkflowFile>
                                       </Sequence>
                                       <FlowStep.Next>
                                         <x:Reference>__ReferenceID3</x:Reference>

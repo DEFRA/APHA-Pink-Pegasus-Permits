@@ -9,6 +9,7 @@
     "DRACOE.Orchestrator.Jobs.64bit": "[1.0.7]",
     "DRACOE.PopUps.64": "[1.0.9]",
     "UiPath.Excel.Activities": "[2.23.5]",
+    "UiPath.IntegrationService.Activities": "[1.36.0]",
     "UiPath.Mail.Activities": "[1.23.11]",
     "UiPath.PDF.Activities": "[4.3.0]",
     "UiPath.System.Activities": "[24.10.8]",
@@ -77,6 +78,13 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Process\\Process Subflows\\SplitPDF - TC.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2dfcd283-a738-4d2f-8a23-b6b46d66f92e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Process\\Process Subflows\\ai reference extraction - TC.xaml"
       }
     ],
     "saveToCloud": false
