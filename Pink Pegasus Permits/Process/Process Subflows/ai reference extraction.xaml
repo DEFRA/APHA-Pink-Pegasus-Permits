@@ -1,0 +1,280 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ai_reference_extraction" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ai_reference_extraction_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.CB0C3F5E4CC_v1_sub_chat_sub_completion_Create.Bundle;assembly=CB0C3F5E4CC_v1_sub_c.rRwRW4ZpQ6C1YugN63Q32A" xmlns:upap="clr-namespace:UiPath.PDF.Activities.PDF;assembly=UiPath.PDF.Activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Helpers.TypeDetailsCustomization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.PDF.Activities.PDF</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.PDF</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>UiPath.Platform</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>CB0C3F5E4CC_v1_sub_c.rRwRW4ZpQ6C1YugN63Q32A</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF</AssemblyReference>
+      <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ai_reference_extraction" sap:VirtualizedContainerService.HintSize="854.8,1354.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="strRef" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <upap:ExportPDFPageAsImage OutputFile="{x:Null}" ResourceFile="{x:Null}" DisplayName="Export PDF Page As Image" FileName="[g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" sap:VirtualizedContainerService.HintSize="502,176.4" sap2010:WorkflowViewState.IdRef="ExportPDFPageAsImage_1" ImageDpi="150" OutputFileName="[g_Config(&quot;AI File Location&quot;).ToString + &quot;\fileimage.jpeg&quot;]" PageNumber="1">
+      <upap:ExportPDFPageAsImage.Item>
+        <upap:ItemArgument x:TypeArguments="upr:IResource" ResourceFile="{x:Null}" FileName="[g_Config(&quot;CurrentSplitFilePath&quot;).ToString]" />
+      </upap:ExportPDFPageAsImage.Item>
+    </upap:ExportPDFPageAsImage>
+    <isactr:ConnectorActivity Configuration="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" ConnectionId="a636ce5f-7931-4064-8013-01b0c3f5e4cc" DisplayName="Image Analysis" sap:VirtualizedContainerService.HintSize="502,485.6" sap2010:WorkflowViewState.IdRef="ConnectorActivity_1" UiPathActivityTypeId="267d190b-590f-304a-a865-e9d3722fa772">
+      <isactr:ConnectorActivity.FieldObjects>
+        <isactr:FieldObject Name="prompt" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String" xml:space="preserve">["Extract the permit reference number from the supplied scanned document.
+
+WHERE TO LOOK:
+Look in the box in the TOP-RIGHT corner labelled ""PERMIT/CERTIFICATE"".
+
+The required reference number is the text immediately following ""No.""
+
+IMPORTANT:
+- Do NOT extract the separate 6-digit number printed above the box.
+- The reference number is normally 13 characters long.
+- It follows this format:
+
+\b2\dGB(IMP|EXP|A10|REX|POC|MIC)[A-Z0-9]{6}\b
+
+- It starts with two digits followed by GB.
+- The next three characters identify the permit type.
+- The final six characters are letters or numbers.
+- Pay particular attention to distinguishing O from 0.
+
+VALIDATION:
+Check that the extracted reference number matches the specified format before returning it.
+
+OUTPUT:
+Return ONLY the reference number.
+If it cannot be confidently identified, return NOT_FOUND."]</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="image_type" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String">File</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="image_url" Type="FieldArgument" />
+        <isactr:FieldObject Name="_file" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath(g_Config("AI File Location").ToString + "\fileimage.jpeg")]</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="topK" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Int32" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="topP" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Double" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="max_tokens" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Int64" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="temperature" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Double" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="frequency_penalty" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Int64" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="presence_penalty" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Int64" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="n" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Int64" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="top_p" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Int64" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="_stop" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="modelName" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String">anthropic.claude-sonnet-5</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="instruction" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String" xml:space="preserve">You are a highly accurate document data extraction assistant specialising in scanned permits and certificates.
+
+Your job is to extract information exactly as it appears in the supplied document.
+
+Rules:
+- Prioritise accuracy over speed.
+- Never guess, assume or invent missing characters.
+- Pay close attention to visually similar characters, particularly O and 0, I and 1, and S and 5.
+- Preserve all letters and numbers exactly as printed.
+- Ignore unrelated numbers, dates and document identifiers.
+- If the requested information cannot be confidently identified, return NOT_FOUND.
+- Follow the requested output format exactly.
+- Do not provide explanations, commentary or additional text unless explicitly requested.</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="Xminus_signElementsminus_signServiceminus_signProfile" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String">high-capacity</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="out_text" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <OutArgument x:TypeArguments="x:String">[strRef]</OutArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="Jit_v1_sub_chat_sub_completion" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <OutArgument x:TypeArguments="uiascb:v1_sub_chat_sub_completion_Create" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+      </isactr:ConnectorActivity.FieldObjects>
+    </isactr:ConnectorActivity>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="502,175.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;AI extracted result: &quot; + strRef]" />
+    <If Condition="[Regex.isMatch(strRef,&quot;\b2\dGB(IMP|EXP|A10|REX|POC|MIC)[A-Z0-9]{6}\b&quot;)]" DisplayName="If - double check reference structure" sap:VirtualizedContainerService.HintSize="502,493.6" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Then>
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,165.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign DisplayName="Assign - save the result" sap:VirtualizedContainerService.HintSize="434,105.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:Object">[g_Config("SearchResult")]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:Object">[strRef]</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,165.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign DisplayName="Assign - nothing found" sap:VirtualizedContainerService.HintSize="434,105.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:Object">[g_Config("SearchResult")]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:Object">[""]</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </If.Else>
+    </If>
+  </Sequence>
+</Activity>
