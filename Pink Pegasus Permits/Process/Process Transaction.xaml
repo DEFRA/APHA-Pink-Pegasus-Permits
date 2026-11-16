@@ -731,7 +731,7 @@
                               <FlowDecision.False>
                                 <FlowDecision x:Name="__ReferenceID29" DisplayName="backup ai" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_11">
                                   <FlowDecision.Condition>
-                                    <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="not(booAI_used)" />
+                                    <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="not(booAI_used) andalso cbool(g_Config(&quot;AI&quot;))" />
                                   </FlowDecision.Condition>
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
