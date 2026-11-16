@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ai_reference_extraction" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ai_reference_extraction_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.CB0C3F5E4CC_v1_sub_chat_sub_completion_Create.Bundle;assembly=CB0C3F5E4CC_v1_sub_c.rRwRW4ZpQ6C1YugN63Q32A" xmlns:upap="clr-namespace:UiPath.PDF.Activities.PDF;assembly=UiPath.PDF.Activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ai_reference_extraction" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ai_reference_extraction_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.CB0C3F5E4CC_v1_sub_chat_sub_completion_Create.Bundle;assembly=CB0C3F5E4CC_v1_sub_c.rRwRW4ZpQ6C1YugN63Q32A" xmlns:upap="clr-namespace:UiPath.PDF.Activities.PDF;assembly=UiPath.PDF.Activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -99,7 +99,7 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ai_reference_extraction" sap:VirtualizedContainerService.HintSize="880.8,1302" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ai_reference_extraction" sap:VirtualizedContainerService.HintSize="854.8,1354.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strRef" />
     </Sequence.Variables>
@@ -155,15 +155,51 @@ If it cannot be confidently identified, return NOT_FOUND."]</InArgument>
             <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath(g_Config("AI File Location").ToString + "\fileimage.jpeg")]</InArgument>
           </isactr:FieldObject.Value>
         </isactr:FieldObject>
-        <isactr:FieldObject Name="topK" Type="FieldArgument" />
-        <isactr:FieldObject Name="topP" Type="FieldArgument" />
-        <isactr:FieldObject Name="max_tokens" Type="FieldArgument" />
-        <isactr:FieldObject Name="temperature" Type="FieldArgument" />
-        <isactr:FieldObject Name="frequency_penalty" Type="FieldArgument" />
-        <isactr:FieldObject Name="presence_penalty" Type="FieldArgument" />
-        <isactr:FieldObject Name="n" Type="FieldArgument" />
-        <isactr:FieldObject Name="top_p" Type="FieldArgument" />
-        <isactr:FieldObject Name="_stop" Type="FieldArgument" />
+        <isactr:FieldObject Name="topK" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Int32" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="topP" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Double" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="max_tokens" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Int64" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="temperature" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Double" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="frequency_penalty" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Int64" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="presence_penalty" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Int64" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="n" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Int64" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="top_p" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:Int64" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="_stop" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
         <isactr:FieldObject Name="modelName" Type="FieldArgument">
           <isactr:FieldObject.Value>
             <InArgument x:TypeArguments="x:String">anthropic.claude-sonnet-5</InArgument>
@@ -203,7 +239,8 @@ Rules:
         </isactr:FieldObject>
       </isactr:ConnectorActivity.FieldObjects>
     </isactr:ConnectorActivity>
-    <If Condition="[Regex.isMatch(strRef,&quot;\b2\dGB(IMP|EXP|A10|REX|POC|MIC)[A-Z0-9]{6}\b&quot;)]" DisplayName="If - double check reference structure" sap:VirtualizedContainerService.HintSize="502,502.4" sap2010:WorkflowViewState.IdRef="If_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="502,175.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;AI extracted result: &quot; + strRef]" />
+    <If Condition="[Regex.isMatch(strRef,&quot;\b2\dGB(IMP|EXP|A10|REX|POC|MIC)[A-Z0-9]{6}\b&quot;)]" DisplayName="If - double check reference structure" sap:VirtualizedContainerService.HintSize="502,493.6" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,165.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
@@ -239,6 +276,5 @@ Rules:
         </Sequence>
       </If.Else>
     </If>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="502,114.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[g_Config(&quot;SearchResult&quot;).ToString]" />
   </Sequence>
 </Activity>
